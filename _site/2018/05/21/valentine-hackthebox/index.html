@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Valentine &#8211; HacktheBox</title>
+	<meta name="description" content="PORT STATE SERVICE VERSION">
+	
+	<link rel="canonical" href="http://0.0.0.0:4000/2018/05/21/valentine-hackthebox/">
+	<link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://0.0.0.0:4000/feed.xml" />
+	
+	<!-- <link rel="stylesheet" href="/css/main.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/monokai_sublime.min.css">
+	<script type="text/javascript" src="/static/js/highlight.min.js"></script>
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
+    -->
+    
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+ <!--  <body data-spy="scroll" data-target="#myAffix"> -->
+  <body>
+
+    <header>
+
+<!-- navbar -->
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Your awesome title</a>
+      <p class="navbar-text"></p>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        
+          <li>
+        
+        <a href="/">Home</a></li>
+
+        
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</header>
+
+    <div id="main" class="container main">
+      <div class="row">
+  <div id="myArticle" class="col-sm-9">
+    <div class="post-area post">
+      <header>
+        <h1>Valentine &#8211; HacktheBox</h1>
+        <p>May 21, 2018 • rowbot</p>
+      </header>
+      <hr>
+      <article>
+        <pre>PORT STATE SERVICE VERSION</pre>
+
+<pre>22/tcp open ssh OpenSSH 5.9p1 Debian 5ubuntu1.10 (Ubuntu Linux; protocol 2.0)</pre>
+
+<pre>| ssh-hostkey:</pre>
+
+<pre>| 1024 96:4c:51:42:3c:ba:22:49:20:4d:3e:ec:90:cc:fd:0e (DSA)</pre>
+
+<pre>| 2048 46:bf:1f:cc:92:4f:1d:a0:42:b3:d2:16:a8:58:31:33 (RSA)</pre>
+
+<pre>|_ 256 e6:2b:25:19:cb:7e:54:cb:0a:b9:ac:16:98:c6:7d:a9 (ECDSA)</pre>
+
+<pre>80/tcp open http Apache httpd 2.2.22 ((Ubuntu))</pre>
+
+<pre>| http-methods:</pre>
+
+<pre>|_ Supported Methods: GET HEAD POST OPTIONS</pre>
+
+<pre>|_http-server-header: Apache/2.2.22 (Ubuntu)</pre>
+
+<pre>|_http-title: Site doesn't have a title (text/html).</pre>
+
+<pre>443/tcp open ssl/http Apache httpd 2.2.22 ((Ubuntu))</pre>
+
+<pre>| http-methods:</pre>
+
+<pre>|_ Supported Methods: GET HEAD POST OPTIONS</pre>
+
+<pre>|_http-server-header: Apache/2.2.22 (Ubuntu)</pre>
+
+<pre>|_http-title: Site doesn't have a title (text/html).</pre>
+
+<pre>| ssl-cert: Subject: commonName=valentine.htb/organizationName=valentine.htb/stateOrProvinceName=FL/countryName=US</pre>
+
+<pre>| Issuer: commonName=valentine.htb/organizationName=valentine.htb/stateOrProvinceName=FL/countryName=US</pre>
+
+<pre>| Public Key type: rsa</pre>
+
+<pre>| Public Key bits: 2048</pre>
+
+<pre>| Signature Algorithm: sha1WithRSAEncryption</pre>
+
+<pre>| Not valid before: 2018-02-06T00:45:25</pre>
+
+<pre>| Not valid after: 2019-02-06T00:45:25</pre>
+
+<pre>| MD5: a413 c4f0 b145 2154 fb54 b2de c7a9 809d</pre>
+
+<pre>|_SHA-1: 2303 80da 60e7 bde7 2ba6 76dd 5214 3c3c 6f53 01b1</pre>
+
+<pre>|_ssl-date: 2018-05-21T09:32:33+00:00; -1s from scanner time.</pre>
+
+<pre>No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).</pre>
+
+<p>Ran dirsearch and found a dev directory</p>
+
+<pre>[10:48:29] 301 - 308B - /dev -&gt; http://10.10.10.79/dev/</pre>
+
+<pre>[10:48:29] 200 - 1KB - /dev/</pre>
+
+<pre>[10:48:29] 403 - 283B - /doc/</pre>
+
+<pre>[10:48:29] 403 - 298B - /doc/en/changes.html</pre>
+
+<pre>[10:48:29] 403 - 297B - /doc/stable.version</pre>
+
+<pre>[10:48:31] 200 - 38B - /index</pre>
+
+<pre>[10:48:31] 200 - 38B - /index.php</pre>
+
+<pre>[10:48:31] 200 - 38B - /index.php/login/</pre>
+
+<pre>Task Completed</pre>
+
+<h1 id="index-of-dev">Index of /dev</h1>
+
+<table>
+  <tr>
+    <th>
+      <img src="https://i0.wp.com/10.10.10.79/icons/blank.gif?w=680" alt="[ICO]" data-recalc-dims="1" />
+    </th>
+    
+    <th>
+      <a href="http://10.10.10.79/dev/?C=N;O=D">Name</a>
+    </th>
+    
+    <th>
+      <a href="http://10.10.10.79/dev/?C=M;O=A">Last modified</a>
+    </th>
+    
+    <th>
+      <a href="http://10.10.10.79/dev/?C=S;O=A">Size</a>
+    </th>
+    
+    <th>
+      <a href="http://10.10.10.79/dev/?C=D;O=A">Description</a>
+    </th>
+  </tr>
+  
+  <tr>
+    <th colspan="5">
+      <hr />
+    </th>
+  </tr>
+  
+  <tr>
+    <td valign="top">
+      <img src="https://i0.wp.com/10.10.10.79/icons/back.gif?w=680" alt="[DIR]" data-recalc-dims="1" />
+    </td>
+    
+    <td>
+      <a href="http://10.10.10.79/">Parent Directory</a>
+    </td>
+    
+    <td>
+    </td>
+    
+    <td align="right">
+      &#8211;
+    </td>
+    
+    <td>
+    </td>
+  </tr>
+  
+  <tr>
+    <td valign="top">
+      <img src="https://i1.wp.com/10.10.10.79/icons/unknown.gif?w=680" alt="[ ]" data-recalc-dims="1" />
+    </td>
+    
+    <td>
+      <a href="http://10.10.10.79/dev/hype_key">hype_key</a>
+    </td>
+    
+    <td align="right">
+      13-Dec-2017 16:48
+    </td>
+    
+    <td align="right">
+      5.3K
+    </td>
+    
+    <td>
+    </td>
+  </tr>
+  
+  <tr>
+    <td valign="top">
+      <img src="https://i2.wp.com/10.10.10.79/icons/text.gif?w=680" alt="[TXT]" data-recalc-dims="1" />
+    </td>
+    
+    <td>
+      <a href="http://10.10.10.79/dev/notes.txt">notes.txt</a>
+    </td>
+    
+    <td align="right">
+      05-Feb-2018 16:42
+    </td>
+    
+    <td align="right">
+      227
+    </td>
+    
+    <td>
+    </td>
+  </tr>
+  
+  <tr>
+    <th colspan="5">
+      <hr />
+    </th>
+  </tr>
+</table>
+
+<address>
+  Apache/2.2.22 (Ubuntu) Server at 10.10.10.79 Port 80
+</address>
+
+<address>
+  Notes
+</address>
+
+<address>
+  <pre>To do:
+
+1) Coffee.
+2) Research.
+3) Fix decoder/encoder before going live.
+4) Make sure encoding/decoding is only done client-side.
+5) Don't use the decoder/encoder until any of this is done.
+6) Find a better way to take notes.
+</pre>
+</address>
+
+      </article>
+      <hr>
+        <div class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+            <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
+            <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+        </div>
+        <script>
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    </div>
+	    
+  </div>
+  
+  <div id="content" class="col-sm-3">
+    <!-- <div id="myAffix" class="shadow-bottom-center hidden-xs" data-spy="affix" data-offset-top="0" data-offset-bottom="-20"> -->
+    <div id="myAffix" class="shadow-bottom-center hidden-xs" >
+      <div class="categories-list-header">
+        Content
+      </div>
+      <div class="content-text"></div>
+    </div>
+  </div>
+  
+</div>
+    </div>
+
+    
+    <div id="top" data-toggle="tooltip" data-placement="left" title="back to top">
+      <a href="javascript:;">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+      </a>
+    </div>
+
+    <footer class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="mailto:your-email@example.com"><span class="glyphicon glyphicon-envelope"></span> your-email@example.com</a>
+        <span class="point"> · </span>
+        
+          <a href="https://github.com/jekyll">
+            <span class="icon">
+              <svg viewBox="0 0 16 16">
+                <path fill="#aaa" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+            Github
+            <!-- <span>jekyll</span> -->
+          </a>
+          
+          <span class="point"> · </span>
+          <span><a href="_posts/2018-05-21-valentine-hackthebox.md">View source</a></span>
+          <span class="point"> · </span>
+          <span><a class="newpost" href="javascript:;">New post</a></span>
+		  <span class="point"> · </span>
+          <span><a href="/feed.xml">RSS</a></span>
+          <span class="point"> · </span>
+          <span>&copy; 2015 LiXizhi</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="text/javascript">
+    function OnClickNewPost()
+    {
+        var title = prompt("Please enter title of your post");
+        if (title!=null){
+            title = title.replace(" ", "-");
+            var currentdate = new Date();
+            var urlNewPage = "?filename=_posts/" 
+                + currentdate.getFullYear() + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + title + ".md";
+                
+            var defaultText =  [
+                '---',
+                'layout: post',
+                'comments: true',
+                'categories: diary',
+                '---',
+                '## Title',
+                'text'
+                ].join('\n');
+            urlNewPage += "&value=" + encodeURIComponent(defaultText);
+            window.open(urlNewPage);
+        }
+    }
+    
+    $(function() {
+      // CreateNewPostLinks
+      $('.newpost').each(function(){
+          $(this).click(OnClickNewPost);
+      });
+    });
+</script>
+  
+  </body>
+</html>

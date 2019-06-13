@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Irked &#8211; HacktheBox</title>
+	<meta name="description" content="I learned about SUID with this box. The user access I found easy, I think I got user in under 10 minutes – that’s a first for me. The PE part took me sometim...">
+	
+	<link rel="canonical" href="http://0.0.0.0:4000/2018/11/27/irked-hackthebox/">
+	<link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://0.0.0.0:4000/feed.xml" />
+	
+	<!-- <link rel="stylesheet" href="/css/main.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/monokai_sublime.min.css">
+	<script type="text/javascript" src="/static/js/highlight.min.js"></script>
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
+    -->
+    
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+ <!--  <body data-spy="scroll" data-target="#myAffix"> -->
+  <body>
+
+    <header>
+
+<!-- navbar -->
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Your awesome title</a>
+      <p class="navbar-text"></p>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        
+          <li>
+        
+        <a href="/">Home</a></li>
+
+        
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</header>
+
+    <div id="main" class="container main">
+      <div class="row">
+  <div id="myArticle" class="col-sm-9">
+    <div class="post-area post">
+      <header>
+        <h1>Irked &#8211; HacktheBox</h1>
+        <p>Nov 27, 2018 • rowbot</p>
+      </header>
+      <hr>
+      <article>
+        <p>I learned about SUID with this box. The user access I found easy, I think I got user in under 10 minutes – that’s a first for me. The PE part took me sometime, which a few nudges!</p>
+
+<p><strong>Skills Required</strong><br />
+SUID knowledge</p>
+
+<p><strong>Skills Learned</strong><br />
+Searching for sticky bits<br />
+Understanding a bit more about standard linux binaries<br />
+Adding echo command to a file to see if it executes it.</p>
+
+<pre class="wp-block-preformatted">START<br /></pre>
+
+<p>nmap -sC -sV -oA all -vv -p- 10.10.10.117<figure class="wp-block-image"></figure></p>
+
+<p><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-41-00.png?w=680" alt="" class="wp-image-528" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-41-00.png?w=938 938w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-41-00.png?resize=300%2C125 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-41-00.png?resize=768%2C320 768w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /> &lt;figcaption&gt;nmap imported into pentest.ws&lt;/figcaption&gt;&lt;/figure&gt;</p>
+
+<p>I see that there is an IRC server and take took a look for a metasploit module.</p>
+<figure class="wp-block-image">
+
+<img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?fit=680%2C139" alt="" class="wp-image-493" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?w=1571 1571w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?resize=300%2C61 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?resize=768%2C157 768w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?resize=1024%2C209 1024w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-23-44.png?w=1360 1360w" sizes="(max-width: 680px) 100vw, 680px" /> <figcaption>metasploit search on pentest.ws</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-27-59.png?w=680" alt="" class="wp-image-497" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-27-59.png?w=589 589w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-27-59.png?resize=300%2C172 300w" sizes="(max-width: 589px) 100vw, 589px" data-recalc-dims="1" /><figcaption>set RHOST and RPORT</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-29-53.png?w=680" alt="" class="wp-image-500" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-29-53.png?w=941 941w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-29-53.png?resize=300%2C125 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-29-53.png?resize=768%2C321 768w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /><figcaption>have shell as ircd &#8211; need to upgrade shell.</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-30-47.png?w=680" alt="" class="wp-image-501" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-30-47.png?w=361 361w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-30-47.png?resize=277%2C300 277w" sizes="(max-width: 361px) 100vw, 361px" data-recalc-dims="1" /><figcaption>I chose python 2&nbsp; and upgraded to a better shell</figcaption></figure>
+
+<p>After upgrading the shell I browsed to the home directory to see what users there were. I seen there was ircd – which I was logged in as and djmardov. Traversing into the djmardov user there were a few files – laid out in the Windows style</p>
+
+<pre class="wp-block-preformatted">ircd@irked:/home/djmardov$ ls <br />ls <br />Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos<br />ircd@irked:/home/djmardov$ </pre>
+
+<p>I ran ls -laR to search for files within all the directories in djmardov and found the user.txt file as well as another hidden file called .<em>backup</em>.</p>
+<figure class="wp-block-image">
+
+<img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-37-47.png?w=680" alt="" class="wp-image-502" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-37-47.png?w=536 536w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-37-47.png?resize=300%2C228 300w" sizes="(max-width: 536px) 100vw, 536px" data-recalc-dims="1" /> </figure>
+
+<p>I tried to view user.txt but couldnt – I’m not the user djmardov.</p>
+
+<pre class="wp-block-preformatted">ircd@irked:/home/djmardov/Documents$ cat user.txt<br />cat user.txt<br />cat: user.txt: Permission denied<br />ircd@irked:/home/djmardov/Documents$ </pre>
+
+<p>I checked to see what was in the contents of .backup.txt</p>
+
+<pre class="wp-block-preformatted">ircd@irked:/home/djmardov/Documents$ cat .backup<br />cat .backup<br />Super elite steg backup pw<br />UPupDOWNdownLRlrBAbaSSss</pre>
+
+<p>Humm so I have a steg password for something – probably an image.</p>
+
+<p>Back to review the nmap scan and see there is a http server.</p>
+<figure class="wp-block-image">
+
+<img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-53.png?w=680" alt="" class="wp-image-505" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-53.png?w=786 786w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-53.png?resize=300%2C15 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-53.png?resize=768%2C37 768w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /> </figure>
+
+<p>It reveals an image – I guessed that this is the image that the steg password is for.</p>
+<figure class="wp-block-image">
+
+<img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-25.png?fit=680%2C471" alt="" class="wp-image-506" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-25.png?w=1033 1033w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-25.png?resize=300%2C208 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-25.png?resize=768%2C532 768w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-42-25.png?resize=1024%2C709 1024w" sizes="(max-width: 680px) 100vw, 680px" /> <figcaption>image on homepage</figcaption></figure>
+
+<p>I downloaded the image to kali</p>
+<figure class="wp-block-image">
+
+<img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-45-49.png?w=680" alt="" class="wp-image-507" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-45-49.png?w=583 583w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-45-49.png?resize=300%2C116 300w" sizes="(max-width: 583px) 100vw, 583px" data-recalc-dims="1" /> <figcaption>I notice that the file name is irked &#8211; adding to my suspicions that this is the image that i need to decode</figcaption></figure>
+
+<p>For some reason steghide is not installed by default in Kali so I did an apt-get install steghide to install it. Following the help page of it I extracted the data from the file as shown below.</p>
+<figure class="wp-block-image">
+
+<img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-50-03.png?w=680" alt="" class="wp-image-508" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-50-03.png?w=660 660w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-50-03.png?resize=300%2C60 300w" sizes="(max-width: 660px) 100vw, 660px" data-recalc-dims="1" /> <figcaption>captured another password &#8211; probably for the user djmardov</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-45-19.png?w=680" alt="" class="wp-image-525" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-45-19.png?w=803 803w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-45-19.png?resize=300%2C37 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-45-19.png?resize=768%2C95 768w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /><figcaption>added creds to pentest.ws</figcaption></figure>
+
+<p>I ssh’d in as dj</p>
+<figure class="wp-block-image">
+
+<img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-51-39.png?w=680" alt="" class="wp-image-509" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-51-39.png?w=668 668w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-16-51-39.png?resize=300%2C110 300w" sizes="(max-width: 668px) 100vw, 668px" data-recalc-dims="1" /> </figure>
+
+<pre class="wp-block-preformatted">djmardov@irked:~$ cat Documents/user.txt <br />4a66a78b12dc0e661a59d3f5c0267a8e<br />djmardov@irked:~$ </pre>
+
+<p>The PE part took me a lot of time and I needed a few nudges. I’ll go through some my thoughts, some commands I used and what I was looking for.</p>
+
+<pre class="wp-block-preformatted">djmardov@irked:/tmp$ sudo -l<br />-bash: sudo: command not found<br />djmardov@irked:/tmp$ </pre>
+
+<p>Test to see what sudo command djmardov can run. He has not been given access to sudo. Sometimes you get lucky with this PE route.</p>
+<figure class="wp-block-image">
+
+<img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-14-42.png?fit=680%2C237" alt="" class="wp-image-517" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-14-42.png?w=1028 1028w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-14-42.png?resize=300%2C104 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-14-42.png?resize=768%2C267 768w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-14-42.png?resize=1024%2C357 1024w" sizes="(max-width: 680px) 100vw, 680px" /> <figcaption>nothing of note running as root</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-30-12.png?w=680" alt="" class="wp-image-518" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-30-12.png?w=806 806w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-30-12.png?resize=300%2C31 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-30-12.png?resize=768%2C80 768w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /><figcaption>`What is the server's Architecture cat&nbsp;/proc/version;&nbsp;uname&nbsp;-a;&nbsp;uname&nbsp;-mrs;&nbsp;rpm&nbsp;-q&nbsp;kernel;&nbsp;dmesg&nbsp;|&nbsp;grep&nbsp;Linux;&nbsp;ls&nbsp;/boot&nbsp;|&nbsp;grep&nbsp;vmlinuz-;&nbsp;file&nbsp;/bin/ls;&nbsp;cat&nbsp;/etc/lsb-release`</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?fit=680%2C258" alt="" class="wp-image-519" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?w=1576 1576w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?resize=300%2C114 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?resize=768%2C292 768w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?resize=1024%2C389 1024w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-33-02.png?w=1360 1360w" sizes="(max-width: 680px) 100vw, 680px" /><figcaption>Find apps installed;  
+`ls&nbsp;-alh&nbsp;/usr/bin/;&nbsp;ls&nbsp;-alh&nbsp;/sbin/;&nbsp;dpkg&nbsp;-l;&nbsp;rpm&nbsp;-qa;&nbsp;ls&nbsp;-alh&nbsp;/var/cache/apt/archivesO;&nbsp;ls&nbsp;-alh&nbsp;/var/cache/yum/*;`  
+  
+nothing looks out of place here &#8211; checking versions of some apps.</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-35-53.png?w=680" alt="" class="wp-image-522" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-35-53.png?w=586 586w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-35-53.png?resize=300%2C22 300w" sizes="(max-width: 586px) 100vw, 586px" data-recalc-dims="1" /><figcaption>`Looking for&nbsp;`writeable config files &#8211; none found  
+ `find&nbsp;/etc/&nbsp;-writable&nbsp;-type&nbsp;f&nbsp;2&gt;/dev/null`</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-41-15.png?w=680" alt="" class="wp-image-523" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-41-15.png?w=581 581w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-26-20-41-15.png?resize=242%2C300 242w" sizes="(max-width: 581px) 100vw, 581px" data-recalc-dims="1" /><figcaption>What Scheduled jobs? &#8211; None  
+`crontab&nbsp;-l;&nbsp;ls&nbsp;-alh&nbsp;/var/spool/cron;&nbsp;ls&nbsp;-al&nbsp;/etc/&nbsp;|&nbsp;grep&nbsp;cron;&nbsp;ls&nbsp;-al&nbsp;/etc/cron*;&nbsp;cat&nbsp;/etc/cron*;&nbsp;cat&nbsp;/etc/at.allow;&nbsp;cat&nbsp;/etc/at.deny;&nbsp;cat&nbsp;/etc/cron.allow;&nbsp;cat&nbsp;/etc/cron.deny`</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-55-03.png?fit=680%2C60" alt="" class="wp-image-530" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-55-03.png?w=1119 1119w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-55-03.png?resize=300%2C27 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-55-03.png?resize=768%2C68 768w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-09-55-03.png?resize=1024%2C91 1024w" sizes="(max-width: 680px) 100vw, 680px" /><figcaption>check to see if the system saves any history &#8211; maybe capture a password or username or interesting file in there &#8211; no luck  
+  
+`cat&nbsp;~/.bash_history;&nbsp;cat&nbsp;~/.nano_history;&nbsp;cat&nbsp;~/.atftp_history;&nbsp;cat&nbsp;~/.mysql_history;&nbsp;cat&nbsp;~/.php_history`</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/imageedit_2_2236803244.png?w=680" alt="" class="wp-image-531" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/imageedit_2_2236803244.png?w=1020 1020w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/imageedit_2_2236803244.png?resize=300%2C117 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/imageedit_2_2236803244.png?resize=768%2C300 768w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /><figcaption>Look for binaries with the SUID or GUID bits set.  
+  
+`find&nbsp;/&nbsp;-perm&nbsp;-g=s&nbsp;-o&nbsp;-perm&nbsp;-4000&nbsp;!&nbsp;-type&nbsp;l&nbsp;-maxdepth&nbsp;6&nbsp;-exec&nbsp;ls&nbsp;-ld&nbsp;{}&nbsp;\;&nbsp;2&gt;/dev/null`</figcaption></figure>
+
+<p>What I initially noticed was the date of /usr/bin/viewuser- it was 2018 meaning recently modified. I copied and pasted the other commands in to see what would happen. I also ran the command on my Kali machine</p>
+<figure class="wp-block-image">
+
+<img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-10-42-31.png?fit=680%2C328" alt="" class="wp-image-534" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-10-42-31.png?w=1061 1061w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-10-42-31.png?resize=300%2C145 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-10-42-31.png?resize=768%2C371 768w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-10-42-31.png?resize=1024%2C494 1024w" sizes="(max-width: 680px) 100vw, 680px" /> <figcaption>I compared it to my Kali machine as it is Debian based. Again viewuser stood out so requires more investigation&nbsp;</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-19-47.png?w=680" alt="" class="wp-image-535" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-19-47.png?w=618 618w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-19-47.png?resize=300%2C55 300w" sizes="(max-width: 618px) 100vw, 618px" data-recalc-dims="1" /><figcaption>running the binary says its looking for /tmp/listusers and can&#8217;t find it.</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-21-19.png?fit=680%2C177" alt="" class="wp-image-536" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-21-19.png?w=1070 1070w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-21-19.png?resize=300%2C78 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-21-19.png?resize=768%2C200 768w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-21-19.png?resize=1024%2C266 1024w" sizes="(max-width: 680px) 100vw, 680px" /><figcaption>contents of /tmp</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-22-29.png?w=680" alt="" class="wp-image-537" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-22-29.png?w=706 706w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-22-29.png?resize=300%2C64 300w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /><figcaption>I created listusers with &#8216;echo this is a test&#8217; inside it and ran. Permission denied. Meaning it found the file but obviously doesn&#8217;t have the permission to run it. I need to chmod it.</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-24-22.png?w=680" alt="" class="wp-image-538" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-24-22.png?w=631 631w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-24-22.png?resize=300%2C73 300w" sizes="(max-width: 631px) 100vw, 631px" data-recalc-dims="1" /><figcaption>It worked! but what permissions does this file run as. Added whoami to the file</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-25-32.png?w=680" alt="" class="wp-image-539" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-25-32.png?w=635 635w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-25-32.png?resize=300%2C72 300w" sizes="(max-width: 635px) 100vw, 635px" data-recalc-dims="1" /><figcaption>Success! It is running as root. Now to capture root.txt</figcaption></figure>
+<figure class="wp-block-image"><img src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-26-49.png?w=680" alt="" class="wp-image-540" data-recalc-dims="1" /></figure>
+<figure class="wp-block-image"><img src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-27-00.png?w=680" alt="" class="wp-image-541" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-27-00.png?w=617 617w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/11/Screenshot-from-2018-11-27-11-27-00.png?resize=300%2C80 300w" sizes="(max-width: 617px) 100vw, 617px" data-recalc-dims="1" /><figcaption>root captured</figcaption></figure>
+
+<p>You could get that binary to execute a reverse shell with root access.</p>
+
+<p>I learned some important stuff with this box. Check for sticky bits and look for binaries which are not standard in that version of linux. Also if your not sure what file is doing, add and echo  command to see if it executes it.</p>
+
+      </article>
+      <hr>
+        <div class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+            <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
+            <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+        </div>
+        <script>
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    </div>
+	    
+  </div>
+  
+  <div id="content" class="col-sm-3">
+    <!-- <div id="myAffix" class="shadow-bottom-center hidden-xs" data-spy="affix" data-offset-top="0" data-offset-bottom="-20"> -->
+    <div id="myAffix" class="shadow-bottom-center hidden-xs" >
+      <div class="categories-list-header">
+        Content
+      </div>
+      <div class="content-text"></div>
+    </div>
+  </div>
+  
+</div>
+    </div>
+
+    
+    <div id="top" data-toggle="tooltip" data-placement="left" title="back to top">
+      <a href="javascript:;">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+      </a>
+    </div>
+
+    <footer class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="mailto:your-email@example.com"><span class="glyphicon glyphicon-envelope"></span> your-email@example.com</a>
+        <span class="point"> · </span>
+        
+          <a href="https://github.com/jekyll">
+            <span class="icon">
+              <svg viewBox="0 0 16 16">
+                <path fill="#aaa" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+            Github
+            <!-- <span>jekyll</span> -->
+          </a>
+          
+          <span class="point"> · </span>
+          <span><a href="_posts/2018-11-27-irked-hackthebox.md">View source</a></span>
+          <span class="point"> · </span>
+          <span><a class="newpost" href="javascript:;">New post</a></span>
+		  <span class="point"> · </span>
+          <span><a href="/feed.xml">RSS</a></span>
+          <span class="point"> · </span>
+          <span>&copy; 2015 LiXizhi</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="text/javascript">
+    function OnClickNewPost()
+    {
+        var title = prompt("Please enter title of your post");
+        if (title!=null){
+            title = title.replace(" ", "-");
+            var currentdate = new Date();
+            var urlNewPage = "?filename=_posts/" 
+                + currentdate.getFullYear() + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + title + ".md";
+                
+            var defaultText =  [
+                '---',
+                'layout: post',
+                'comments: true',
+                'categories: diary',
+                '---',
+                '## Title',
+                'text'
+                ].join('\n');
+            urlNewPage += "&value=" + encodeURIComponent(defaultText);
+            window.open(urlNewPage);
+        }
+    }
+    
+    $(function() {
+      // CreateNewPostLinks
+      $('.newpost').each(function(){
+          $(this).click(OnClickNewPost);
+      });
+    });
+</script>
+  
+  </body>
+</html>

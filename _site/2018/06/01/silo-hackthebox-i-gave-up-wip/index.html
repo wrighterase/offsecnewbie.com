@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Silo &#8211; Hackthebox (I gave up/wip)</title>
+	<meta name="description" content="START">
+	
+	<link rel="canonical" href="http://0.0.0.0:4000/2018/06/01/silo-hackthebox-i-gave-up-wip/">
+	<link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://0.0.0.0:4000/feed.xml" />
+	
+	<!-- <link rel="stylesheet" href="/css/main.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/monokai_sublime.min.css">
+	<script type="text/javascript" src="/static/js/highlight.min.js"></script>
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
+    -->
+    
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+ <!--  <body data-spy="scroll" data-target="#myAffix"> -->
+  <body>
+
+    <header>
+
+<!-- navbar -->
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Your awesome title</a>
+      <p class="navbar-text"></p>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        
+          <li>
+        
+        <a href="/">Home</a></li>
+
+        
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</header>
+
+    <div id="main" class="container main">
+      <div class="row">
+  <div id="myArticle" class="col-sm-9">
+    <div class="post-area post">
+      <header>
+        <h1>Silo &#8211; Hackthebox (I gave up/wip)</h1>
+        <p>Jun 1, 2018 • rowbot</p>
+      </header>
+      <hr>
+      <article>
+        <p>START</p>
+
+<p>I decided to use Sn1per on this box to see what that tool was like. <a href="https://github.com/1N3/Sn1per">https://github.com/1N3/Sn1per</a></p>
+
+<pre><span style="color: #8ae234;">====================================================================================</span>                                                                                                                         
+<span style="color: #ef2929;"> RUNNING TCP PORT SCAN </span>                                                                                                                                                                                      
+<span style="color: #8ae234;">====================================================================================</span>                                                                                                                         
+Starting Nmap 7.70SVN ( https://nmap.org ) at 2018-05-31 15:33 BST                                                                                                                                           
+Nmap scan report for 10.10.10.82                                                                                                                                                                             
+Host is up (0.035s latency).                                                                                                                                                                                 
+Not shown: 467 closed ports, 1 filtered port                                                                                                                                                                 
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit                                                                                                                                  
+PORT      STATE SERVICE                                                                                                                                                                                      
+80/tcp    open  http                                                                                                                                                                                         
+135/tcp   open  msrpc                                                                                                                                                                                        
+139/tcp   open  netbios-ssn                                                                                                                                                                                  
+445/tcp   open  microsoft-ds                                                                                                                                                                                 
+1521/tcp  open  oracle                                                                                                                                                                                       
+5985/tcp  open  wsman                                                                                                                                                                                        
+47001/tcp open  winrm                                                                                                                                                                                        
+49152/tcp open  unknown                                                                                                                                                                                      
+                                                                                                                                                                                                             
+Nmap done: 1 IP address (1 host up) scanned in 3.48 seconds                                                                                                                                                  
+<span style="color: #8ae234;">====================================================================================</span>                                                                                                                         
+<span style="color: #ef2929;"> RUNNING UDP PORT SCAN </span>                                                                                                                                                                                      
+<span style="color: #8ae234;">====================================================================================</span>                                                                                                                         
+Starting Nmap 7.70SVN ( https://nmap.org ) at 2018-05-31 15:33 BST                                                                                                                                           
+Nmap scan report for 10.10.10.82                                                                                                                                                                             
+Host is up (0.035s latency).                                                                                                                                                                                 
+Not shown: 6 closed ports                                                                                                                                                                                    
+PORT     STATE         SERVICE                                                                                                                                                                               
+53/udp   open|filtered domain                                                                                                                                                                                
+67/udp   open|filtered dhcps                                                                                                                                                                                 
+68/udp   open|filtered dhcpc                                                                                                                                                                                 
+88/udp   open|filtered kerberos-sec                                                                                                                                                                          
+123/udp  open|filtered ntp                                                                                                                                                                                   
+137/udp  open|filtered netbios-ns                                                                                                                                                                            
+138/udp  open|filtered netbios-dgm                                                                                                                                                                           
+2049/udp open|filtered nfs                                                                                                                                                                                   
+                                                                                                                                                                                                             
+Nmap done: 1 IP address (1 host up) scanned in 6.56 seconds                                                                                                                                                  
+</pre>
+
+<p>Presents the info quite clearly it does state version infor later on but I just didnt want to hit you with a wall of output. The webserver didnt give anything away even after using dirbuster. Letsee what I can find out about the Oracle service. To look for oracle nmap scripts I used the following:</p>
+
+<pre>[<span style="color: #8ae234;"><b>root</b></span>:<span style="color: #cc0000;">~/Desktop/silo</span>]# locate .nse | grep oracle                                                                                                                                                  (<span style="color: #fce94f;"><b>master</b></span><span style="color: #ef2929;"><b>✱</b></span>) 
+/usr/share/nmap/scripts/<span style="color: #ef2929;"><b>oracle</b></span>-brute-stealth.nse
+/usr/share/nmap/scripts/<span style="color: #ef2929;"><b>oracle</b></span>-brute.nse
+/usr/share/nmap/scripts/<span style="color: #ef2929;"><b>oracle</b></span>-enum-users.nse
+/usr/share/nmap/scripts/<span style="color: #ef2929;"><b>oracle</b></span>-sid-brute.nse
+/usr/share/nmap/scripts/<span style="color: #ef2929;"><b>oracle</b></span>-tns-version.nse
+[<span style="color: #8ae234;"><b>root</b></span>:<span style="color: #cc0000;">~/Desktop/silo</span>]
+</pre>
+
+<p>I tried to run oracle-tns-version.nse but it didnt work for some reason – it just gave me a default nmap scan. Instead I ran the following:</p>
+
+<pre>[<span style="color: #8ae234;"><b>root</b></span>:<span style="color: #cc0000;">~/Desktop/silo</span>]# nmap -p 1521 -A 10.10.10.82                                                                                                                                                (<span style="color: #fce94f;"><b>master</b></span><span style="color: #ef2929;"><b>✱</b></span>)
+Starting Nmap 7.70SVN ( https://nmap.org ) at 2018-06-01 14:38 BST
+Nmap scan report for 10.10.10.82
+Host is up, received reset ttl 127 (0.031s latency).
+
+PORT     STATE SERVICE    REASON          VERSION
+1521/tcp open  oracle-tns syn-ack ttl 127 <span style="color: #00ff00;">Oracle TNS listener 11.2.0.2.0 (unauthorized)</span>
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: Microsoft Windows Server 2012 (96%), Microsoft Windows Server 2012 R2 (96%), Microsoft Windows Server 2012 R2 Update 1 (96%), Microsoft Windows 7, Windows Server 2012, or Windows 8.1
+ Update 1 (96%), Microsoft Windows Server 2012 or Server 2012 R2 (95%), Microsoft Windows Vista SP1 (95%), Microsoft Windows Server 2008 SP2 Datacenter Version (94%), Microsoft Windows Server 2008 R2 (93%)
+, Microsoft Windows Home Server 2011 (Windows Server 2008 R2) (93%), Microsoft Windows Server 2008 SP1 (93%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+</pre>
+
+<p>I’ve highlighted the version number in green. OK good, now lets see what else I can find out from the nmap scripts</p>
+
+<pre>[<span style="color: #8ae234;"><b>root</b></span>:<span style="color: #cc0000;">~/Desktop/silo</span>]#  nmap --script=oracle-sid-brute -p 1521 10.10.10.82                                                                                                                        (<span style="color: #fce94f;"><b>master</b></span><span style="color: #ef2929;"><b>✱</b></span>)
+
+Starting Nmap 7.70SVN ( https://nmap.org ) at 2018-06-01 14:39 BST
+Nmap scan report for 10.10.10.82
+Host is up, received reset ttl 127 (0.031s latency).
+
+PORT     STATE SERVICE REASON
+1521/tcp open  oracle  syn-ack ttl 127
+| oracle-sid-brute:
+|_  <span style="color: #00ff00;">XE</span>
+
+Nmap done: 1 IP address (1 host up) scanned in 46.78 seconds
+</pre>
+
+<p>So we have an sid ( whatever that is )</p>
+
+<pre>[<span style="color: #8ae234;"><b>root</b></span>:<span style="color: #cc0000;">~/Desktop/silo</span>]# nmap --script=oracle-enum-users -p 1521 10.10.10.82 -vvv                                                                                                                   (<span style="color: #fce94f;"><b>master</b></span><span style="color: #ef2929;"><b>✱</b></span>) 
+Starting Nmap 7.70SVN ( https://nmap.org ) at 2018-06-01 14:49 BST
+NSE: Loaded 1 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 14:49
+Completed NSE at 14:49, 0.00s elapsed
+Initiating Ping Scan at 14:49
+Scanning 10.10.10.82 [4 ports]
+Completed Ping Scan at 14:49, 0.23s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:49
+Completed Parallel DNS resolution of 1 host. at 14:49, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 1, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating SYN Stealth Scan at 14:49
+Scanning 10.10.10.82 [1 port]
+Discovered open port 1521/tcp on 10.10.10.82
+Completed SYN Stealth Scan at 14:49, 0.34s elapsed (1 total ports)
+NSE: Script scanning 10.10.10.82.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 14:49
+Completed NSE at 14:49, 0.00s elapsed
+Nmap scan report for 10.10.10.82
+Host is up, received echo-reply ttl 127 (0.030s latency).
+Scanned at 2018-06-01 14:49:41 BST for 1s
+
+PORT     STATE SERVICE REASON
+1521/tcp open  oracle  syn-ack ttl 127
+
+<span style="color: #00ff00;">NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 1) scan.
+Initiating NSE at 14:49
+Completed NSE at 14:49, 0.00s elapsed</span>
+Read data files from: /usr/local/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.97 seconds
+           Raw packets sent: 6 (240B) | Rcvd: 2 (72B)
+[<span style="color: #8ae234;"><b>root</b></span>:<span style="color: #cc0000;">~/Desktop/silo</span>]#</pre>
+
+<p>It looks as if the script ran – but I’m not 100% as it hasn’t given me an indication of users.</p>
+
+<p>I was getting a bit frustrated here so I fireup Metasploit, looked for modules and ran a few. I found this:</p>
+
+<pre><u>msf</u> auxiliary(<span style="color: #ef2929;"><b>scanner/oracle/tnspoison_checker</b></span>) &gt; run
+
+<span style="color: #8ae234;"><b>[+]</b></span> [2018.06.01-14:58:47] 10.10.10.82:1521 - 10.10.10.82:1521 is vulnerable
+<span style="color: #729fcf;"><b>[*]</b></span> [2018.06.01-14:58:47] Scanned 1 of 1 hosts (100% complete)
+<span style="color: #729fcf;"><b>[*]</b></span> Auxiliary module execution completed
+<u>msf</u> auxiliary(<span style="color: #ef2929;"><b>scanner/oracle/tnspoison_checker</b></span>) &gt; 
+</pre>
+
+<p>I have to admit I had to check the hackthebox forums for hints at this point. Someone people were saying to install odat <a href="https://github.com/quentinhardy/odat">https://github.com/quentinhardy/odat</a> and it was not easy to install. I gave up. ODAT (Oracle Database Attacking Tool) is an open source penetration testing tool that tests the security of Oracle Databases remotely. Why is this not installed in Kali by default!? I can’t be bothered registering with oracle to download the tool then run complicated configuration commands. FU Silo, Oracle and Kali. Only joking Kali I cant stay mad at you.</p>
+
+      </article>
+      <hr>
+        <div class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+            <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
+            <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+        </div>
+        <script>
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    </div>
+	    
+  </div>
+  
+  <div id="content" class="col-sm-3">
+    <!-- <div id="myAffix" class="shadow-bottom-center hidden-xs" data-spy="affix" data-offset-top="0" data-offset-bottom="-20"> -->
+    <div id="myAffix" class="shadow-bottom-center hidden-xs" >
+      <div class="categories-list-header">
+        Content
+      </div>
+      <div class="content-text"></div>
+    </div>
+  </div>
+  
+</div>
+    </div>
+
+    
+    <div id="top" data-toggle="tooltip" data-placement="left" title="back to top">
+      <a href="javascript:;">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+      </a>
+    </div>
+
+    <footer class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="mailto:your-email@example.com"><span class="glyphicon glyphicon-envelope"></span> your-email@example.com</a>
+        <span class="point"> · </span>
+        
+          <a href="https://github.com/jekyll">
+            <span class="icon">
+              <svg viewBox="0 0 16 16">
+                <path fill="#aaa" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+            Github
+            <!-- <span>jekyll</span> -->
+          </a>
+          
+          <span class="point"> · </span>
+          <span><a href="_posts/2018-06-01-silo-hackthebox-i-gave-up-wip.md">View source</a></span>
+          <span class="point"> · </span>
+          <span><a class="newpost" href="javascript:;">New post</a></span>
+		  <span class="point"> · </span>
+          <span><a href="/feed.xml">RSS</a></span>
+          <span class="point"> · </span>
+          <span>&copy; 2015 LiXizhi</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="text/javascript">
+    function OnClickNewPost()
+    {
+        var title = prompt("Please enter title of your post");
+        if (title!=null){
+            title = title.replace(" ", "-");
+            var currentdate = new Date();
+            var urlNewPage = "?filename=_posts/" 
+                + currentdate.getFullYear() + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + title + ".md";
+                
+            var defaultText =  [
+                '---',
+                'layout: post',
+                'comments: true',
+                'categories: diary',
+                '---',
+                '## Title',
+                'text'
+                ].join('\n');
+            urlNewPage += "&value=" + encodeURIComponent(defaultText);
+            window.open(urlNewPage);
+        }
+    }
+    
+    $(function() {
+      // CreateNewPostLinks
+      $('.newpost').each(function(){
+          $(this).click(OnClickNewPost);
+      });
+    });
+</script>
+  
+  </body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>FluxCapacitor &#8211; HacktheBox</title>
+	<meta name="description" content="With 1 day left until the box has retired this is the first time I’ve looked at this box. I will give it a go to see how far I get.">
+	
+	<link rel="canonical" href="http://0.0.0.0:4000/2018/05/11/fluxcapacitor-hackthebox/">
+	<link rel="alternate" type="application/rss+xml" title="Your awesome title" href="http://0.0.0.0:4000/feed.xml" />
+	
+	<!-- <link rel="stylesheet" href="/css/main.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/monokai_sublime.min.css">
+	<script type="text/javascript" src="/static/js/highlight.min.js"></script>
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
+    -->
+    
+	<script type="text/javascript" src="/static/js/index.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+ <!--  <body data-spy="scroll" data-target="#myAffix"> -->
+  <body>
+
+    <header>
+
+<!-- navbar -->
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Your awesome title</a>
+      <p class="navbar-text"></p>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        
+          <li>
+        
+        <a href="/">Home</a></li>
+
+        
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+            
+              <li>
+            
+            <a href="/about/"><span class="glyphicon "></span> About</a></li>
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+</header>
+
+    <div id="main" class="container main">
+      <div class="row">
+  <div id="myArticle" class="col-sm-9">
+    <div class="post-area post">
+      <header>
+        <h1>FluxCapacitor &#8211; HacktheBox</h1>
+        <p>May 11, 2018 • rowbot</p>
+      </header>
+      <hr>
+      <article>
+        <p>With 1 day left until the box has retired this is the first time I’ve looked at this box. I will give it a go to see how far I get.</p>
+
+<p>START</p>
+
+<p>Quick scan to see what ports are open.</p>
+
+<pre>[root:~/Desktop/FluxCapacitor]# nmap -F 10.10.10.69
+Starting Nmap 7.70SVN ( https://nmap.org ) at 2018-05-11 11:06 BST
+Nmap scan report for 10.10.10.69
+Host is up, received echo-reply ttl 63 (0.031s latency).
+Not shown: 99 closed ports
+Reason: 99 resets
+PORT STATE SERVICE REASON
+80/tcp open http syn-ack ttl 63
+
+Nmap done: 1 IP address (1 host up) scanned in 1.78 seconds</pre>
+
+<p>Port 80 is open, lets kick off a more detailed scan while I poke about to see what I can see through port 80. The scans I started are listed below.</p>
+
+<p>I loaded up a browser and got this webpage</p>
+
+<p><img class="alignnone size-full wp-image-172" src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/web-1.png?resize=662%2C186" alt="" width="662" height="186" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/web-1.png?w=662 662w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/web-1.png?resize=300%2C84 300w" sizes="(max-width: 662px) 100vw, 662px" data-recalc-dims="1" /></p>
+
+<p>The source looked like this. Notice the tags starting with <em> – very funny.</em></p>
+
+<pre id="line1"><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span id="line2"></span>&lt;<span class="start-tag">html</span>&gt;
+<span id="line3"></span>&lt;<span class="start-tag">head</span>&gt;
+<span id="line4"></span>&lt;<span class="start-tag">title</span>&gt;Keep Alive&lt;/<span class="end-tag">title</span>&gt;
+<span id="line5"></span>&lt;/<span class="end-tag">head</span>&gt;
+<span id="line6"></span>&lt;<span class="start-tag">body</span>&gt;
+<span id="line7"></span>	OK: node1 alive
+<span id="line8"></span>	<span class="comment">&lt;!--
+<span id="line9"></span>		Please, add timestamp with something like:
+<span id="line10"></span>		&lt;script&gt; $.ajax({ type: "GET", url: '/sync' }); &lt;/script&gt;
+<span id="line11"></span>	--&gt;</span>
+<span id="line12"></span>	&lt;<span class="start-tag">hr</span>/&gt;
+<span id="line13"></span>	FluxCapacitor Inc. info@fluxcapacitor.htb - http://fluxcapacitor.htb&lt;<span class="start-tag">br</span>&gt;
+<span id="line14"></span>	&lt;<span class="start-tag">em</span>&gt;&lt;<span class="start-tag">met</span>&gt;&lt;<span class="start-tag">doc</span>&gt;&lt;<span class="start-tag">brown</span>&gt;Roads? Where we're going, we don't need roads.&lt;/<span class="end-tag">brown</span>&gt;&lt;/<span class="end-tag">doc</span>&gt;&lt;/<span class="end-tag">met</span>&gt;&lt;/<span class="end-tag">em</span>&gt;
+<span id="line15"></span>&lt;/<span class="end-tag">body</span>&gt;
+<span id="line16"></span>&lt;/<span class="end-tag">html</span>&gt;
+<span id="line17"></span></pre>
+
+<p>While I was poking about I ran Dirbuster, Gobuster and Dirsearch one after another all came back with 3 pages which I didn’t have permission to view.</p>
+
+<pre>[root:~]# dirsearch -u 10.10.10.69 -e php -w /usr/share/wfuzz/wordlist/general/megabeast.txt -t 100
+
+_|. _ _ _ _ _ _|_ v0.3.8
+(_||| _) (/_(_|| (_| )
+
+Extensions: php | Threads: 100 | Wordlist size: 20469
+
+Error Log: /pentest/intelligence-gathering/dirsearch/logs/errors-18-05-11_13-52-07.log
+
+Target: 10.10.10.69
+
+[13:52:17] 403 - 577B - /synchronism
+[13:52:17] 403 - 577B - /synchronization
+[13:52:17] 403 - 577B - /synchronizer
+[13:52:17] 403 - 577B - /synchronize
+[13:52:17] 403 - 577B - /synchronizers
+[13:52:17] 403 - 577B - /synchronized
+[13:52:17] 403 - 577B - /synchronizes
+[13:52:17] 403 - 577B - /synchronizing
+[13:52:17] 403 - 577B - /synchronously
+[13:52:17] 403 - 577B - /synchrony
+[13:52:17] 403 - 577B - /synchrotron
+[13:52:17] 403 - 577B - /synchronous
+[13:52:17] 403 - 577B - /syncopate
+
+Task Completed
+
+</pre>
+
+<p>I browsed to all pages listed here and got a 403 forbidden error. Just a note, if anyone knows a script that can take the input of a file say the list of directories above and check to see what message you get from the website, let me know.</p>
+
+<p>I opened Burp and checked the responses. As you can see the Server is SuperWAF – some sort of Web Application Firewall. Google does not tell me what exactly is SuperWAF therefore my thoughts lead me to think it just a custom name for a server that is acting as a firewall – I maybe wrong here.</p>
+
+<p><img class="alignnone size-full wp-image-173" src="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/response.png?resize=680%2C368" alt="" width="680" height="368" srcset="https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/response.png?w=853 853w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/response.png?resize=300%2C162 300w, https://i1.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/response.png?resize=768%2C416 768w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /></p>
+
+<p>Just a side note curl -v would have gave me the same output</p>
+
+<pre>[root:~/Desktop/FluxCapacitor]# curl -v 10.10.10.69
+* Rebuilt URL to: 10.10.10.69/
+* Trying 10.10.10.69...
+* TCP_NODELAY set
+* Connected to 10.10.10.69 (10.10.10.69) port 80 (#0)
+&gt; GET / HTTP/1.1
+&gt; Host: 10.10.10.69
+&gt; User-Agent: curl/7.58.0
+&gt; Accept: */*
+&gt; 
+&lt; HTTP/1.1 200 OK
+&lt; Date: Fri, 11 May 2018 13:04:06 GMT
+&lt; Content-Type: text/html
+&lt; Content-Length: 395
+&lt; Last-Modified: Tue, 05 Dec 2017 16:02:29 GMT
+&lt; Connection: keep-alive
+&lt; ETag: "5a26c315-18b"
+&lt; Server: SuperWAF
+&lt; Accept-Ranges: bytes
+&lt; 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Keep Alive&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ OK: node1 alive
+ &lt;!--
+ Please, add timestamp with something like:
+ &lt;script&gt; $.ajax({ type: "GET", url: '/sync' }); &lt;/script&gt;
+ --&gt;
+ &lt;hr/&gt;
+ FluxCapacitor Inc. info@fluxcapacitor.htb - http://fluxcapacitor.htb&lt;br&gt;
+ &lt;em&gt;&lt;met&gt;&lt;doc&gt;&lt;brown&gt;Roads? Where we're going, we don't need roads.&lt;/brown&gt;&lt;/doc&gt;&lt;/met&gt;&lt;/em&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+* Connection #0 to host 10.10.10.69 left intact</pre>
+
+<p>I looked for nmap scripts to detect what type of firewall and ran them. Not sure why they didn’t work.</p>
+
+<pre>[root:~/Desktop/FluxCapacitor]# locate .nse | grep waf 
+/pentest/vulnerability-analysis/nmap/scripts/http-waf-detect.nse
+/pentest/vulnerability-analysis/nmap/scripts/http-waf-fingerprint.nse
+[root:~/Desktop/FluxCapacitor]# nmap -p80 --script=http-waf-detect.nse 10.10.10.69
+Starting Nmap 7.70SVN ( https://nmap.org ) at 2018-05-11 14:09 BST
+Nmap scan report for fluxcapacitor.htb (10.10.10.69)
+Host is up, received reset ttl 63 (0.030s latency).
+
+PORT STATE SERVICE REASON
+80/tcp open http syn-ack ttl 63
+
+Nmap done: 1 IP address (1 host up) scanned in 0.99 seconds
+[root:~/Desktop/FluxCapacitor]# nmap --script=http-waf-fingerprint 10.10.10.69
+Starting Nmap 7.70SVN ( https://nmap.org ) at 2018-05-11 14:11 BST
+Nmap scan report for fluxcapacitor.htb (10.10.10.69)
+Host is up, received reset ttl 63 (0.030s latency).
+Not shown: 998 closed ports, 1 filtered port
+Reason: 998 resets and 1 no-response
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT STATE SERVICE REASON
+80/tcp open http syn-ack ttl 63
+
+Nmap done: 1 IP address (1 host up) scanned in 2.84 seconds</pre>
+
+<p>I was expecting something like this as per the nmap manual.</p>
+
+<pre>Script Output
+PORT STATE SERVICE REASON
+80/tcp open http syn-ack
+| http-waf-fingerprint:
+| Detected WAF
+|_ BinarySec version 3.2.2</pre>
+
+<p>Clearly there is a firewall that is stopping me getting access to it. How to bypass it is the problem. I’m pretty sure there are no other vectors I should be attacking.</p>
+
+<p>Back from the Google land I found a tool in Kali that will test to see if I’m behind a WAF for sure.</p>
+
+<pre>[root:~/Desktop/FluxCapacitor]# wafw00f 10.10.10.69
+
+^ ^
+ _ __ _ ____ _ __ _ _ ____
+ ///7/ /.' \ / __////7/ /,' \ ,' \ / __/
+ | V V // o // _/ | V V // 0 // 0 // _/
+ |_n_,'/_n_//_/ |_n_,' \_,' \_,'/_/
+ &lt;
+ ...'
+
+WAFW00F - Web Application Firewall Detection Tool
+
+By Sandro Gauci &amp;&amp; Wendel G. Henrique
+
+Checking http://10.10.10.69
+Generic Detection results:
+No WAF detected by the generic detection
+Number of requests: 14</pre>
+
+<p>What the hell! No WAF detected! Cricky this is stumping me. I’m going to go with my (big) gut and assume that the above tool is wrong.</p>
+
+<p>I found this pdf document on owasp website – link below. The <script>alert(1);<script> reminded me of the note in the index.html page.</script></script></p>
+
+<p><img class="size-full wp-image-176" style="font-weight: bold;" src="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/owasp.png?resize=680%2C403" alt="" width="680" height="403" srcset="https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/owasp.png?w=1087 1087w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/owasp.png?resize=300%2C178 300w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/owasp.png?resize=768%2C456 768w, https://i0.wp.com/offsecnewbie.com/wp-content/uploads/2018/06/owasp.png?resize=1024%2C608 1024w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /></p>
+
+<p>https://www.owasp.org/images/b/bf/OWASP_Stammtisch_Frankfurt_WAF_Profiling_and_Evasion.pdf</p>
+
+<p>It looks like I have to inject a payload to bypass the firewall. Perhaps I could inject a reverse shell. Back to my notes and Google while i figure this out.</p>
+
+<p>I Googled ‘<em>OK: node1 alive</em>‘ to see if that was the output of a known service or script but I couldn’t find anything – other than people struggling on the hackthebox forums with this machine. Reviewing the source page again I didn’t understand what it meant by adding a timestamp.</p>
+
+<pre><span class="comment">&lt;!-- <span id="line9"></span> Please, add timestamp with something like: <span id="line10"></span> &lt;script&gt; $.ajax({ type: "GET", url: '/sync' }); &lt;/script&gt; <span id="line11"></span> --&gt;</span></pre>
+
+<p>I tried in Burp to see what response I’d get.</p>
+
+<p><img class="alignnone size-full wp-image-180" src="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/05/timestamp.png?resize=680%2C181" alt="" width="680" height="181" srcset="https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/05/timestamp.png?w=1325 1325w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/05/timestamp.png?resize=300%2C80 300w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/05/timestamp.png?resize=768%2C204 768w, https://i2.wp.com/offsecnewbie.com/wp-content/uploads/2018/05/timestamp.png?resize=1024%2C272 1024w" sizes="(max-width: 680px) 100vw, 680px" data-recalc-dims="1" /></p>
+
+<p>I Googled to see what the response meant by ‘padding to disable…’ and it seems that the dev put that in to force the 403 error – so Chrome or MSIE would not use their own ‘you don’t have access to this page, page. So I searched for OpenResty and couldn’t find any exploits.</p>
+
+<p>So I’d like to say that time beat me on this box but unfortunately I’ve hit a wall – a virtual one WAF. Once the machine is retired I’ll update this post. <em><code class="highlighter-rouge">Sad Beep</code></em></p>
+
+<p> </p>
+
+<p> </p>
+
+      </article>
+      <hr>
+        <div class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+            <a href="#" class="bds_fbook" data-cmd="fbook" title="Share to Facebook"></a>
+            <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+        </div>
+        <script>
+            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    </div>
+	    
+  </div>
+  
+  <div id="content" class="col-sm-3">
+    <!-- <div id="myAffix" class="shadow-bottom-center hidden-xs" data-spy="affix" data-offset-top="0" data-offset-bottom="-20"> -->
+    <div id="myAffix" class="shadow-bottom-center hidden-xs" >
+      <div class="categories-list-header">
+        Content
+      </div>
+      <div class="content-text"></div>
+    </div>
+  </div>
+  
+</div>
+    </div>
+
+    
+    <div id="top" data-toggle="tooltip" data-placement="left" title="back to top">
+      <a href="javascript:;">
+        <div class="arrow"></div>
+        <div class="stick"></div>
+      </a>
+    </div>
+
+    <footer class="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a href="mailto:your-email@example.com"><span class="glyphicon glyphicon-envelope"></span> your-email@example.com</a>
+        <span class="point"> · </span>
+        
+          <a href="https://github.com/jekyll">
+            <span class="icon">
+              <svg viewBox="0 0 16 16">
+                <path fill="#aaa" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+              </svg>
+            </span>
+            Github
+            <!-- <span>jekyll</span> -->
+          </a>
+          
+          <span class="point"> · </span>
+          <span><a href="_posts/2018-05-11-fluxcapacitor-hackthebox.md">View source</a></span>
+          <span class="point"> · </span>
+          <span><a class="newpost" href="javascript:;">New post</a></span>
+		  <span class="point"> · </span>
+          <span><a href="/feed.xml">RSS</a></span>
+          <span class="point"> · </span>
+          <span>&copy; 2015 LiXizhi</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="text/javascript">
+    function OnClickNewPost()
+    {
+        var title = prompt("Please enter title of your post");
+        if (title!=null){
+            title = title.replace(" ", "-");
+            var currentdate = new Date();
+            var urlNewPage = "?filename=_posts/" 
+                + currentdate.getFullYear() + "-" + (currentdate.getMonth()+1) + "-" + currentdate.getDate() + "-" + title + ".md";
+                
+            var defaultText =  [
+                '---',
+                'layout: post',
+                'comments: true',
+                'categories: diary',
+                '---',
+                '## Title',
+                'text'
+                ].join('\n');
+            urlNewPage += "&value=" + encodeURIComponent(defaultText);
+            window.open(urlNewPage);
+        }
+    }
+    
+    $(function() {
+      // CreateNewPostLinks
+      $('.newpost').each(function(){
+          $(this).click(OnClickNewPost);
+      });
+    });
+</script>
+  
+  </body>
+</html>
